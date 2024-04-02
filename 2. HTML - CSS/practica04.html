@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos Inline y Block</title>
+    <link rel="stylesheet" href="estilos04.css">
+</head>
+<body>
+
+    <!--span para inline y div para block-->
+    <!--Class puede repetirse, ya que reutilizas código para dar propiedad, mientras que id debe ser un elemento único-->
+
+    <h1 id="titulo-principal">Elementos inline y block en html</h1>
+    <h2>Elementos span (inline)</h2>
+    <p>Texto que sirve para <span style="color: red; font-style: italic;">
+        cambiar propiedades</span> del texto en la misma linea</p>
+    <h2>Elementos div (block)</h2>
+    <div>
+        <h2 id="Programacion">Programación</h2>
+        <p>La programación es importante porque ....</p>
+        <p>ana lava la tina</p>
+    </div>
+    <div id="Medicina" class="clase">
+        <h2>Medicina</h2>
+        <p>La <span class="titulo-uno">Medicina </span>es importante porque ....</p>
+        <p>la tina la lava ana</p>
+    </div>
+    <div class="clase">
+        <h2>Diseñador</h2>
+        <p>El <span class="titulo-uno">diseño</span> es importante porque ....</p>
+        <p>la tina la lava ana</p>
+    </div>
+    <div>
+        <h2>Contador</h2>
+        <p>El Contador es importante porque ....</p>
+        <p>la tina la lava ana</p>
+    </div>
+    <p>Texto fuera del div</p>
+    <a href="#Programacion">Programacion</a> <!--Esto es un bookmark o un marcador, sirve para direccionarte a
+    una parte de la página web-->
+    <a href="#Medicina">Medicina</a>
+</body>
+</html>

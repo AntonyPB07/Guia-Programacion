@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento DOM con Javascript</title>
+    <style>
+        .azul{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 id = "titulo" class="azul">Bienvenido al DOM</h1> <!--Asignamos id para volverlo unico y trabajar de manera directa-->
+    
+    <p id = "párrafo">1er vista al DOM con Javascript</p>
+    <p>Primer parrafo sin ID</p>
+    <p>Segundo parrafo sin ID</p>
+    <p class="azul">Primer parrafo en azul</p>
+    <p class="azul">Segundo parrafo en azul</p>
+    
+    <form id='formulario' method="post">
+        Nombre: <input type="text" name="nombre" value="Antonio" placeholder="Nombre"/>
+        <br>
+        <br>
+        Apellido: <input type="text" name="apellido" value="Pérez" placeholder="Apellido"/>
+        <br>
+        <br>
+    </form>
+    <button onclick="mostrarValores()">Mostrar</button> <!--onclick trabaja con funciones de javascript, en este caso, con la funcion mostrarValores()-->
+    <div id="valores"></div>
+    <script>
+        //getElementById y getElementsByTagName son dos métodos de JavaScript que se utilizan para acceder y manipular elementos HTML en una página web.
+        //Con "document." trabajamos con el documento
+        let titulo = document.getElementById('titulo'); //getElementById: Este método se utiliza para obtener una referencia a un elemento HTML específico en el documento utilizando su atributo id.
+        console.log(`El título es: ${titulo.innerHTML}`);
+        
+        let parrafo = document.getElementById('párrafo');
+        console.log(`El párrafo es: ${parrafo.innerHTML}`);
+        
+        titulo.innerHTML = 'Nuevo título del DOM'; //con esto modificamos los valores antes definidos
+        
+        let parrafos = document.getElementsByTagName('p'); //getElementsByTagName: Este método se utiliza para obtener una lista de todos los elementos con un nombre de etiqueta HTML específico en el documento.
+        console.log(`Número de parrafos es: ${parrafos.length}`);
+        
+        let elementos = document.getElementsByClassName('azul'); //getElementsByClassName: Este método se enfoca en buscar elementos por su atributo class, es decir, los mismos elementos que tienen la misma clase.
+        console.log(`Elementos en color azul son: ${elementos.length}`);
+
+        let varios = document.querySelectorAll(`p.azul`); //querySelectorAll: Se utiliza para seleccionar uno o varios elementos del documento HTML utilizando selectores CSS, en este caso p es de parrafos y azul es de la clase azul.
+        console.log(`Parrafos en azul: ${varios.length}`);
+
+        function mostrarValores(){
+            document.getElementById('titulo').innerHTML = 'Nuevo Titulo por medio de la funcion mostrarValores';
+            let formulario = document.forms['formulario']; //document.forms es para trabajar en referencia a un formulario, dentro va el id del formulario a trabajar
+            let texto = '';
+            let text = '';
+            let nombre = formulario['nombre']; //de esta manera podemos seleccionar un elemento especifico del formulario
+            let apellido = formulario['apellido'];
+            text = nombre.value + "<br/>" + apellido.value;
+            document.getElementById('valores').innerHTML = text;
+            //document.write: es una función en JavaScript que se utiliza para escribir contenido directamente en el documento HTML que se está cargando en un navegador web. 
+            //document.write("Este es un ejemplo de document.write"); // presionar el boton, lo que hace es sobreescribir lo que hay en el DOM con el texto que tiene document.write
+        }
+    </script>
+</body>
+</html>

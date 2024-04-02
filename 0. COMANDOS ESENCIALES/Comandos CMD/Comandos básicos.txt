@@ -1,0 +1,43 @@
+En el símbolo del sistema (cmd), hay comandos que se utilizan con frecuencia para realizar diversas tareas. Aquí algunos de los comandos más importantes:
+
+    dir: Lista los archivos y directorios en el directorio actual.
+    dir
+
+    cd: Cambia el directorio actual.
+    cd <ruta_del_directorio>
+
+    mkdir: Crea un nuevo directorio.
+    mkdir <nombre_del_directorio>
+
+    rmdir: Elimina un directorio.
+    rmdir <nombre_del_directorio>
+
+    del: Elimina un archivo.
+    del <nombre_del_archivo>
+
+    copy: Copia un archivo o directorio.
+    copy <origen> <destino>
+
+    move: Mueve un archivo o directorio.
+    move <origen> <destino>
+
+    ren: Cambia el nombre de un archivo o directorio.
+    ren <nombre_actual> <nuevo_nombre>
+
+    type: Muestra el contenido de un archivo de texto.
+    type <nombre_del_archivo>
+
+    cls o clear: Limpia la pantalla.
+    cls o clear
+
+    ipconfig: Muestra la configuración de red.
+    ipconfig
+
+    ping: Envía paquetes de datos a una dirección IP para probar la conectividad de red.
+    ping <dirección_ip_o_nombre_de_host>
+
+    tasklist: Muestra una lista de todos los procesos en ejecución.
+    tasklist
+
+    taskkill: Finaliza un proceso en ejecución.
+    taskkill /F /IM <nombre_del_proceso>

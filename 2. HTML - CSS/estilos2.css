@@ -1,0 +1,32 @@
+table{
+    width: 100%; /*Hacer que los datos abarquen más espacio, se ajuste al 100*/
+}
+table, th, td{ /*th=table head, td=table data*/
+    border: .5px solid rgb(166, 166, 223);
+   /* border-spacing: 5px; /*Darle un espacio a la tabla entre cada dato*/
+    border-collapse:collapse ;   /*Propiedad para quitar el doble borde, hacerlo como tabla normal*/
+    padding: 5px;
+}
+caption{
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    line-height: 70px;/*ancho del caption, darle más espacio*/
+}
+tr:nth-child(even){ /*even es para las filas o renglones pares*/
+    background-color: rgb(84, 106, 248);
+}
+tr:nth-child(odd){ /*odd es para las filas o renglones impares*/
+    background-color: rgb(224, 137, 137);
+}
+td{
+    text-align: center;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+th{
+    background-color: rgba(18, 18, 139, 0.738);
+    color: aliceblue;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}

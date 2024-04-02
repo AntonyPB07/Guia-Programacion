@@ -1,0 +1,27 @@
+La concurrencia en bases de datos se refiere al manejo de múltiples transacciones que intentan acceder y modificar los mismos datos simultáneamente. 
+La concurrencia es un aspecto crítico en los sistemas de bases de datos multiusuario, ya que múltiples usuarios pueden realizar operaciones de 
+lectura y escritura en la base de datos al mismo tiempo.
+
+Aquí hay algunos conceptos clave relacionados con la concurrencia en bases de datos:
+
+Bloqueo (Locking): El bloqueo es una técnica comúnmente utilizada para gestionar la concurrencia en bases de datos. Los bloqueos se aplican a recursos
+de la base de datos, como filas, tablas o páginas, para evitar que otras transacciones accedan a esos recursos mientras una transacción los está 
+utilizando. Hay diferentes tipos de bloqueo, como bloqueo de lectura, bloqueo de escritura, bloqueo exclusivo, etc.
+
+Aislamiento de Transacciones: El aislamiento de transacciones se refiere al grado en que una transacción se encuentra aislada de las modificaciones
+realizadas por otras transacciones concurrentes. Los sistemas de bases de datos proporcionan diferentes niveles de aislamiento, como lectura no 
+repetible, lectura fantasma, y serializable, para controlar cómo las transacciones ven los cambios realizados por otras transacciones.
+
+Deadlocks: Un deadlock ocurre cuando dos o más transacciones se bloquean entre sí, lo que resulta en que ninguna de ellas pueda continuar. 
+Los sistemas de bases de datos están diseñados para detectar y resolver deadlock automáticamente, generalmente abortando una de las transacciones involucradas.
+
+Control de Concurrencia: Los sistemas de bases de datos utilizan algoritmos de control de concurrencia para garantizar que las transacciones 
+se ejecuten de manera segura y eficiente en entornos multiusuario. Estos algoritmos pueden incluir técnicas de bloqueo, protocolos de 
+recuperación, control de versiones, entre otros.
+
+Optimización de la Concurrencia: Los sistemas de bases de datos pueden implementar técnicas de optimización de concurrencia para mejorar el 
+rendimiento y la escalabilidad en entornos multiusuario. Estas técnicas pueden incluir la utilización de índices, paralelismo en la ejecución 
+de consultas, caché de consultas, y otras estrategias para minimizar el tiempo de espera y maximizar la utilización de recursos.
+
+En resumen, la concurrencia en bases de datos es fundamental para garantizar la integridad y consistencia de los datos en entornos multiusuario,
+y los sistemas de bases de datos implementan una variedad de técnicas y estrategias para gestionarla de manera efectiva.

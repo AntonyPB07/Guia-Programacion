@@ -1,0 +1,92 @@
+GIT INIT: Comando utilizado para inicializar un nuevo repositorio Git en un directorio existente.
+    git init -- (en caso de estar en el directorio donde se quiere inicializar)
+    git init -- url_del_directorio
+
+RAMAS: En Git, las ramas son líneas de desarrollo independientes que permiten trabajar en características nuevas sin afectar el código principal.
+
+GIT ADD: Se utiliza para agregar archivos al área de preparación (staging area) para ser incluidos en el próximo commit.
+    git add nombre_archivo
+
+GIT COMMIT: Comando utilizado para confirmar los cambios realizados en los archivos que están en el área de preparación.
+    git commit -m "Mensaje del commit"
+
+GIT LOG: Muestra un registro de los commits realizados en el repositorio.
+    git log
+
+GIT STATUS: Proporciona información sobre el estado actual del repositorio, incluyendo archivos modificados, añadidos o eliminados.
+    git status
+
+GIT CHECKOUT: Se utiliza para cambiar entre ramas o para restaurar archivos a un estado anterior.
+    git checkout nombre_rama
+
+GIT RESET: Permite revertir cambios en el repositorio. Puede utilizarse para deshacer commits o para mover archivos entre el área de preparación y el directorio de trabajo.
+    git reset nombre_archivo
+
+GIT ALIAS: Permite crear alias para comandos Git largos o frecuentemente utilizados.
+    git config --global alias.nombre_alias "comandos a usar (log, status, etc...)"
+
+IGNORE: Archivo .gitignore donde se especifican patrones de archivos que Git debe ignorar, como archivos temporales o compilados.
+    (Se puede editar el archivo para agregar carpetas o archivos para que estos se ignoren)
+
+GIT DIFF: Muestra las diferencias entre archivos en diferentes etapas del proceso de git (por ejemplo, entre el área de preparación y el último commit).
+    git diff
+    git --staged -- (mostrará las diferencias entre los archivos del área de preparación y el último commit)
+
+GIT RESET-HARD: Permite restablecer el estado del repositorio al estado de un commit específico, eliminando todos los cambios posteriores.
+    git reset --hard commit_hash
+
+GIT REFLOG: Registra todos los cambios de referencia realizados en el repositorio.
+
+GIT TAG: Se utiliza para etiquetar commits específicos, generalmente para marcar versiones.
+    git tag nombre_etiqueta
+    git tad -d nombre_etiqueta
+
+GIT REVERT: Permite deshacer uno o más commits anteriores creando un nuevo commit que revierte los cambios.
+    git revert commit hash
+
+GIT BRANCH: Se utiliza para crear, listar o eliminar ramas en el repositorio.
+    git branch nombre_rama
+    git branch -d nombre_rama
+
+GIT SWITCH: Comando para cambiar entre ramas.
+    git switch nombre_rama
+
+GIT MERGE: Fusiona los cambios de una rama en otra.
+    git merge nombre_rama
+
+GIT STASH: Guarda temporalmente los cambios locales sin realizar un commit para que puedan aplicarse más tarde.
+    git stash
+    git stash pop -- (aplica el cambio reciente almacenado y lo elimina del stash)
+    git stash drop --(elimina un cambio almacenado en la pila de cambios temporales sin aplicarlo al directorio de trabajo)
+
+AUTENTICACIÓN SSH (GITHUB): Configuración de autenticación segura mediante claves SSH para autenticarse en un repositorio de GitHub.
+
+GIT REMOTE: Gestiona las conexiones remotas al repositorio.
+    git remote rm nombre_remoto -- (elimina)
+   
+GIT FETCH: Descarga objetos y referencias de otro repositorio.
+    git fetch repositorio_remoto
+
+GIT PULL: Obtiene los cambios de un repositorio remoto y los fusiona con el repositorio local.
+    git pull repositorio_remoto rama_remota
+
+GIT CLONE: Crea una copia local de un repositorio remoto.
+    git clone url_del_repositorio
+    git clone url_del_repositorio --depth=1 --> solo clonará el commit más reciente del repositorio (obtendrá la última versión y no incluirá el historial completo de commits).
+
+GIT PUSH: Sube los commits locales al repositorio remoto.
+    git push repositorio_remoto -u rama_local
+    git push origin --delete nombre_de_la_rama --> Eliminar rama del repositorio remoto
+
+FORK: Crear una copia independiente de un repositorio, generalmente para contribuir con cambios sin afectar el repositorio original.
+
+PULL REQUEST: Mecanismo para sugerir cambios en un repositorio, generalmente después de hacer un fork y realizar modificaciones en la copia.
+
+MARKDOWN: Lenguaje de marcado ligero utilizado para dar formato al texto en plataformas como GitHub.
+
+GIT CHERRY PICK: Permite seleccionar y aplicar commits específicos de una rama a otra.
+    git cherry-pick <commit>
+
+GIT REBASE: Reescribe la historia del repositorio para mover commits a una nueva base, generalmente para mantener un historial de cambios más limpio y ordenado.
+    git rebase <rama_base>
+

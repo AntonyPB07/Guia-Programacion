@@ -1,0 +1,46 @@
+
+PowerShell es una poderosa interfaz de línea de comandos y un entorno de scripting desarrollado por Microsoft. Aquí tienes algunos de los comandos más importantes en PowerShell:
+
+    Get-Help: Proporciona ayuda para otros comandos de PowerShell.
+    Get-Help <comando>
+
+    Get-Command: Muestra una lista de todos los comandos disponibles en PowerShell.
+    Get-Command
+
+    Get-Process: Muestra información sobre los procesos que se están ejecutando actualmente en el sistema.
+    Get-Process
+
+    Get-Service: Obtiene una lista de todos los servicios en el sistema.
+    Get-Service
+
+    Get-EventLog: Muestra los registros de eventos del sistema.
+    Get-EventLog -LogName <nombre_del_registro>
+
+    Get-Content: Muestra el contenido de archivos.
+    Get-Content <ruta_del_archivo>
+
+    Set-ExecutionPolicy: Establece la política de ejecución de scripts en PowerShell.
+    Set-ExecutionPolicy <política>
+
+    Start-Process: Inicia un nuevo proceso.
+    Start-Process <ruta_del_programa>
+
+    Stop-Process: Detiene un proceso en ejecución.
+    Stop-Process -Name <nombre_del_proceso>
+
+    New-Item: Crea un nuevo archivo o directorio.
+    New-Item -Path <ruta> -ItemType <tipo>
+
+    Remove-Item: Elimina un archivo o directorio.
+    Remove-Item -Path <ruta> -Force
+
+    Copy-Item: Copia un archivo o directorio.
+    Copy-Item -Path <ruta_origen> -Destination <ruta_destino>
+
+    Move-Item: Mueve un archivo o directorio.
+    Move-Item -Path <ruta_origen> -Destination <ruta_destino>
+
+    Invoke-Command: Ejecuta comandos en equipos remotos.
+    Invoke-Command -ComputerName <nombre_del_equipo> -ScriptBlock { <comando> }
+
+Estos son solo algunos de los comandos más importantes en PowerShell, pero hay muchos más disponibles para realizar una variedad de tareas.

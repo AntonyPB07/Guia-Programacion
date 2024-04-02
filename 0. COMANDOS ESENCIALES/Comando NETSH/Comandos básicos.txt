@@ -1,0 +1,25 @@
+-- INICIAR COMANDO
+    netsh ?   -- Con eso muestra toda la lista de comandos para empezar a navegar.
+
+
+Algunos de los comandos más comúnmente utilizados en Netsh incluyen:
+
+    netsh interface ipv4 show addresses: Muestra las direcciones IPv4 configuradas en todas las interfaces de red.
+
+    netsh interface ipv6 show addresses: Muestra las direcciones IPv6 configuradas en todas las interfaces de red.
+
+    netsh interface show interface: Muestra una lista de todas las interfaces de red disponibles y su estado.
+
+    netsh wlan show networks: Muestra una lista de todas las redes inalámbricas disponibles y sus detalles, como el SSID y el tipo de seguridad.
+
+    netsh wlan show profiles: Muestra una lista de todos los perfiles de redes inalámbricas guardados en el equipo.
+
+    netsh wlan show profile name="nombre de perfil" key=clear: Muestra la contraseña en texto claro de un perfil de red inalámbrica específico.
+
+    netsh wlan connect name="nombre de perfil": Conecta el equipo a una red inalámbrica especificada por su nombre de perfil.
+
+    netsh advfirewall firewall show rule name=all: Muestra todas las reglas del firewall configuradas en el equipo.
+
+    netsh advfirewall firewall add rule name="nombre de la regla" dir=in/out action=allow/block: Permite o bloquea el tráfico según una regla específica.
+
+    netsh advfirewall reset: Restablece la configuración del firewall a los valores predeterminados.
