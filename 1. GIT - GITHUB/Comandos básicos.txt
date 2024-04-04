@@ -16,6 +16,9 @@ GIT LOG: Muestra un registro de los commits realizados en el repositorio.
 GIT STATUS: Proporciona información sobre el estado actual del repositorio, incluyendo archivos modificados, añadidos o eliminados.
     git status
 
+GIT RM: Sirve para eliminar archivos o directorios.
+    git rm -r carpeta_a_borrar --> Borra todo el contenido de la carpeta (-r de recursivo)
+
 GIT CHECKOUT: Se utiliza para cambiar entre ramas o para restaurar archivos a un estado anterior.
     git checkout nombre_rama
 
