@@ -21,6 +21,10 @@ En el símbolo del sistema (cmd), hay comandos que se utilizan con frecuencia pa
     move: Mueve un archivo o directorio.
     move <origen> <destino>
 
+    mv: Renombrar carpetas y archivos o moverlos del directorio.
+    mv nombre_viejo nombre_nuevo
+    mv carpeta_o_archivo ruta/de/destino/
+
     ren: Cambia el nombre de un archivo o directorio.
     ren <nombre_actual> <nuevo_nombre>
 
