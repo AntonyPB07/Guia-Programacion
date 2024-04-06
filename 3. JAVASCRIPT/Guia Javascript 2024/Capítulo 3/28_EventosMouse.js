@@ -1,6 +1,6 @@
 /*
 ? Los eventos de mouse en JavaScript son aquellos eventos que se disparan cuando se interactúa con el ratón en una página web. 
-? Algunos de los eventos de mouse más comunes son:
+?   Algunos de los eventos de mouse más comunes son:
 
 ! Eventos de clic:
 click: Se produce cuando se hace clic en un elemento.

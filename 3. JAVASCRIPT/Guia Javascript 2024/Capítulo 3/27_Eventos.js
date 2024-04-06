@@ -1,17 +1,17 @@
 /*
 ? eventHandlers (manejadores de eventos): son funciones que se ejecutan cuando ocurre un evento específico. 
-? Se asignan directamente a una propiedad de un elemento HTML, como onclick, onmouseover, onchange, etc. 
+?   Se asignan directamente a una propiedad de un elemento HTML, como onclick, onmouseover, onchange, etc. 
 
 ? eventListener (escuchadores de eventos): son funciones que esperan a que ocurra un evento en un elemento 
-? específico y luego se activan. Se añaden utilizando el método addEventListener() del objeto del elemento. 
+?   específico y luego se activan. Se añaden utilizando el método addEventListener() del objeto del elemento. 
 
 ? Objeto event: Proporciona información detallada sobre el evento que ocurrió, como qué tipo de evento fue, 
-? en qué elemento ocurrió, las coordenadas del puntero del mouse en el momento del evento, teclas presionadas, 
-? etc. Este objeto se pasa como argumento a las funciones de los manejadores de eventos. 
+?   en qué elemento ocurrió, las coordenadas del puntero del mouse en el momento del evento, teclas presionadas, 
+?   etc. Este objeto se pasa como argumento a las funciones de los manejadores de eventos. 
 
 ? Flujo de eventos (capturing, bubbling): se refiere al orden en que los eventos son disparados y manejados 
-? en una página web. El flujo de eventos sigue una jerarquía en la cual los eventos se propagan desde el 
-? elemento que desencadena el evento hacia arriba o hacia abajo en la jerarquía de los elementos del DOM.
+?   en una página web. El flujo de eventos sigue una jerarquía en la cual los eventos se propagan desde el 
+?   elemento que desencadena el evento hacia arriba o hacia abajo en la jerarquía de los elementos del DOM.
 */
 
 //! eventHandlers

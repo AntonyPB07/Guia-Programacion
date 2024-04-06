@@ -1,9 +1,9 @@
 /*
 *La programación orientada a objetos (POO) es un paradigma de programación que se basa en el 
-concepto de "objetos", los cuales pueden contener datos en forma de campos, también 
-conocidos como atributos, y código en forma de procedimientos, también conocidos como métodos. 
-JavaScript es un lenguaje de programación que admite la programación orientada a objetos, 
-aunque su implementación difiere de otros lenguajes como Java o Python. 
+*   concepto de "objetos", los cuales pueden contener datos en forma de campos, también 
+*   conocidos como atributos, y código en forma de procedimientos, también conocidos como métodos. 
+*   JavaScript es un lenguaje de programación que admite la programación orientada a objetos, 
+*   aunque su implementación difiere de otros lenguajes como Java o Python. 
 
 ? Abstracción: Permite modelar entidades del mundo real como objetos, encapsulando sus propiedades y comportamientos esenciales. La abstracción simplifica la complejidad al enfocarse en los aspectos relevantes de un objeto y ocultando los detalles irrelevantes.
 

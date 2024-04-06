@@ -1,6 +1,6 @@
 /*
 ? setTimeout(): Esta función ejecuta una función específica después de un retraso especificado, en milisegundos. Después de que se completa el 
-? tiempo de espera, la función especificada se ejecuta una vez.
+?   tiempo de espera, la función especificada se ejecuta una vez.
 
 ? setInterval(): Esta función ejecuta una función específica repetidamente, cada cierto intervalo de tiempo, también especificado en milisegundos.
 */
