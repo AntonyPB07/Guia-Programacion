@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+</head>
+
+<body>
+    <table>
+        <caption>Tabla horizontal</caption>
+        <colgroup>
+            <col style="background-color: lightblue;">
+            <col span="2" style="background-color: lightgreen;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Fruta</th>
+                <th>Color</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Manzana</td>
+                <td>Rojo</td>
+                <td>$1.00</td>
+            </tr>
+            <tr>
+                <td>Plátano</td>
+                <td>Amarillo</td>
+                <td>$0.75</td>
+            </tr>
+            <tr>
+                <td>Naranja</td>
+                <td>Naranja</td>
+                <td>$1.25</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td>Suma</td>
+                <td>$180</td>
+            </tr>
+        </tfoot>
+    </table> <br> <br>
+
+    <table>
+        <caption>Tabla vertical</caption>
+        <tr>
+            <th>Firstname</th>
+            <td>Jill</td>
+            <td>Eve</td>
+        </tr>
+        <tr>
+            <th>Lastname</th>
+            <td>Smith</td>
+            <td>Jackson</td>
+        </tr>
+        <tr>
+            <th>Age</th>
+            <td>94</td>
+            <td>50</td>
+        </tr>
+    </table> <br> <br>
+
+    <table>
+        <tr>
+            <th colspan="2">Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+    </table>
+
+
+
+    <!--
+    <table>: Define una tabla.
+
+    <caption>: Proporciona un título o una descripción para la tabla.
+
+    <thead>: Define el encabezado de la tabla, que generalmente contiene filas de encabezado (<tr>) con celdas de encabezado (<th>).
+
+    <tbody>: Define el cuerpo de la tabla, que contiene las filas normales (<tr>) con celdas de datos (<td>).
+
+    <tr>: Define una fila dentro de la tabla.
+
+    <th>: Define una celda de encabezado dentro de una fila de encabezado. El contenido de <th> se mostrará en negrita y centrado por defecto.
+
+    <td>: Define una celda de datos dentro de una fila normal. El contenido de <td> se mostrará en texto normal y alineado a la izquierda por defecto.
+
+    <colspan>:  Especifica cuántas columnas debe ocupar esa celda en horizontal.
+    
+    <rowspan>: Hace que una celda se extienda en varias filas.
+
+    <colgroup>: Se utiliza para definir un grupo de columnas en una tabla.
+    -->
+</body>
+
+</html>

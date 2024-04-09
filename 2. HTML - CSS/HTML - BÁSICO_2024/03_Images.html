@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+</head>
+
+<body>
+    <img src="/url/imagen/imagen.png"
+        alt="Texto alterno de la imagen (se muestra cuando el mouse está por encima de la imagen)">
+
+    <img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600"> <!--! MALA PRÁCRICA, DEBE DE IR EN LOS ESTILOS.CSS. -->
+    
+    <a href="default.asp"> <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;"></a>
+
+    <!--* MAP: crear áreas en las que se puede hacer clic en una imagen. -->
+    <img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+    <map name="workmap">
+        <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.html">
+        <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.html">
+        <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.html">
+        <!--* shape es la forma del area para cubir la figura y pueda tener interactividad, coords son las coordenadas para saber el area donde se interactue. -->
+    </map>
+
+    <!--* PICTURE: permite al navegador seleccionar la mejor imagen para mostrar en función de la resolución de la pantalla y otros factores. 
+            Esto es útil para implementar técnicas de "responsive images" (imágenes responsivas) y optimizar el rendimiento de carga de las páginas web.-->
+    <picture>
+        <source media="(min-width: 650px)" srcset="img_food.jpg">
+        <source media="(min-width: 465px)" srcset="img_car.jpg">
+        <img src="img_girl.jpg">
+    </picture>
+</body>
+
+</html>
