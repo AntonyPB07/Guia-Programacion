@@ -5,16 +5,16 @@ let boleano: boolean = true;
 let indefinido: undefined;
 let nulo_: null;
 
-interface Persona {
-    nombre: string;
-    edad: number;
+interface Personita {
+    nombre: string,
+    edad: number,
     direccion?: string; // propiedad opcional
 }
 
-let persona1: Persona = {
+let myPersona1 : Personita = {
     nombre: "Ana",
     edad: 25,
-    direccion: "Calle Mayor 123",
+    direccion: "Calle Mayor 123"
 };
 
 //! Inferencia --> No es necesario tipar la variable, TS sabe que tipo es el valor asignado (USAR SIEMPRE QUE SE PUEDA).
