@@ -1,0 +1,1 @@
+const animal : string = 'oso';
