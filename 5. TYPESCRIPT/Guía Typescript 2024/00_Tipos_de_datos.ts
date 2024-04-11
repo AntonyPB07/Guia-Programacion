@@ -1,6 +1,7 @@
 //! PRIMITIVOS
 //* string, number, boolean, undefined, null.
-const nombre: string = 'Antonio';
+const nombre: string = 'Antonio'; //! Tipo EXPLICITO
+const nombre2 = 'Luis'; //! Tipo IMPLICITO
 const edad: number = 24;
 let mentira: boolean = true;
 let indefinido: undefined;

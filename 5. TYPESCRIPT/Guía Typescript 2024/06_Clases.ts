@@ -41,8 +41,8 @@ class datesPersona {
 }
 let antony = new datesPersona("Juan", 30);
 antony.saludar(); // Acceso público al método saludar
-console.log(juan.nombre); // Error: 'nombre' es privado y solo accesible dentro de la clase Persona
-console.log(juan.edad); // Error: 'edad' es protegido y solo accesible dentro de la clase Persona y sus subclases
+//console.log(antony.nombre);  Error: 'nombre' es privado y solo accesible dentro de la clase Persona
+//console.log(antony.edad);  Error: 'edad' es protegido y solo accesible dentro de la clase Persona y sus subclases
 
 //! POLIMORFISMO
 class Animal {
