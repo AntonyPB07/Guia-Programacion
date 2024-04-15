@@ -177,12 +177,13 @@ p.bordes {
     /* El ancho de esta caja será igual al 50% del ancho del viewport */
 }
 
-#selectoNoAutorizado [src$='png'] {
-    /*modifica las imagenes que terminen en ...png*/
-    opacity: 15%;
-}
-
-.selectoNoAutorizado [src^='tony'] {
-    /*modifica las imagenes que empiecen con tony...*/
-    opacity: 15%;
+.button {
+    /*Esta es la nueva manera de poner un Hover sin necesidad de hacerlo de manera separada*/
+    color: blue;
+    &:hover {
+        color: red;
+    }
+    &:active {
+        border: #ff6347;
+    }
 }

@@ -19,6 +19,16 @@ a[titulo]{ /*! Selector de atributo*/
     color: aqua;
 }
 
+#selectoNoAutorizado [src$='png'] {
+    /*modifica las imagenes que terminen en ...png*/
+    opacity: 15%;
+}
+
+.selectoNoAutorizado [src^='tony'] {
+    /*modifica las imagenes que empiecen con tony...*/
+    opacity: 15%;
+}
+
 div > span { /*! Selectores de hijo directo (hijos directos de otro elemento)*/
     background-color: antiquewhite;
 }
@@ -27,10 +37,18 @@ ul > li:first-child { /*! Selector de primer hijo*/
     font-weight: bold;
 }
 
-div > p:last-child { /*" Selector de ultimo hijo*/
+div > p:last-child { /*! Selector de ultimo hijo*/
     margin-bottom: 20px;
 }
 
-p > span:only-child { /*! Selectro de hijo unico*/
+p > span:only-child { /*! Selector de hijo unico*/
     color: red;
+}
+
+div + p { /*! Selecciona el primer elemento p que se coloca inmediatamente después de los elementos div. */
+    display: flex;
+}
+
+p ~ ul { /*! Selecciona todos los elementos ul precedidos de un elementos p. */
+    color: aqua;
 }

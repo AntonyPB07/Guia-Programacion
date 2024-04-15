@@ -1,0 +1,22 @@
+/*! initial ignora las propiedades del elemento padre (reestablece al valor que trae el navegador por defecto).*/
+/*! inherit hereda las propiedades de los elementos padre*/ 
+/*! revert se utiliza para restablecer una propiedad CSS al valor que tendría naturalmente si no se hubieran aplicado estilos adicionales. Revierte la propiedad a su valor heredado. */
+/*! unset se utiliza para restablecer una propiedad CSS al valor predeterminado del navegador o al valor que heredaría normalmente. */
+
+div, p {
+    text-align: initial;
+}
+
+div, p {
+    color: inherit;
+}
+
+div, p {
+    font-family: revert;
+}
+
+div, p {
+    font-size: unset;
+}
+
+/*? Se le dará prioridad siempre a los ID(#), despues a las clasese(.) y por último a los elementos solos (p), (div), (h1)*/
