@@ -1,0 +1,20 @@
+/** Para que funcione correctamente DISPLAY FLEX, es necesario que el contenedor de todo sea el que lleve DISPLAY FLEX, los elementos dentro de 
+/**    ese contenedor son los flex__item, que son los hijos directos y que esos son los que se verán afectados por el DISPLAY FLEX.*/
+
+div { /*! Contenedor Padre*/
+    display: flex;
+    flex-direction: column; /*Valores: row, row-reverse, column, column-reverse*/
+    flex-wrap: nowrap; /*Controla cómo se comportan los elementos flex cuando no caben en una sola línea (nowrap - por defecto, wrap, wrap-reverse).*/
+    flex-flow: column wrap; /*flex-flow: <flex-direction> <flex-wrap>;*/
+    justify-content: space-between; /*Valores: flex-start, flex-end, center, space-between, space-around, space-evenly*/
+    align-items: center; /*Valores: stretch, flex-start, flex-end, center, baseline*/
+    align-content: space-around; /*Valores: flex-start, flex-end, center, space-between, space-around, stretch*/
+    direction: rtl; /*La direccion de los items es de izquierda a derecha (right to left)*/
+}
+
+.flex__item { /*! Contenedor hijo directo*/
+    background-color: violet;
+    text-align: center;
+    flex: 1 0 auto; /*Valores: flex-grow, flex-shrink, flex-basis /*! (OPCIONAL)*/
+    align-self: center; /*Alinea un elemento flex individualmente dentro del contenedor (stretch - por defecto, flex-start, flex-end, center, baseline).*/
+}
