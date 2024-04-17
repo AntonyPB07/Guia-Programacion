@@ -13,13 +13,24 @@ mi_diccionario = {
 }
 print(otro_diccionario)
 print(mi_diccionario)
+
+# Obtener el valor de las claves
+print(mi_diccionario['Nombre'])
+print(mi_diccionario.get('Nombre'))     # Esta manera es más segura, ya que si no encuentra la clave, en vez de dar error nos muestra 'none'
 print('Nombre')
 
-# Sobreescribe el valor de la clave seleccionada, agregar una nueva clave con su respectivo calor y eliminar un valor.
+# Sobreescribe el valor de la clave seleccionada, agregar una nueva clave con su respectivo valor y eliminar un valor de mi diccionario.
 mi_diccionario['Nombre'] = 'Luis'       # Sobreescrive el valor
 mi_diccionario['Escuela'] = 'TESCI'     # Agrega una nueva clave con su respectivo valor
-del mi_diccionario['Edad']              # Elimina el valor Edad de mi_diccionario
+del mi_diccionario['Edad']              # Elimina el valor y clave Edad de mi_diccionario
 print(mi_diccionario)
+
+# Eliminación de pares de claves y valores de un diccionario
+dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
+dct.pop('key1') # removes key1 item --- pop(key): elimina el elemento con el nombre de clave especificado:
+dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
+dct.popitem() # removes the last item --- popitem(): elimina el último elemento
+del dct['key2'] # removes key2 item --- del: quita un elemento con el nombre de clave especificado
 
 # Busqueda de claves y valores
 print('Nombre' in mi_diccionario)       # Devuelve true ya que lo que busca es la clave, no el valor
