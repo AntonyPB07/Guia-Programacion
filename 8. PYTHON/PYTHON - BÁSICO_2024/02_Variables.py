@@ -1,15 +1,17 @@
+# *** VARIABLES ***
 # En Python no suele usarse Camel Case (miVariable, numeroPrimo), si no se usa Snake Case (mi_variable, numero_primo).
 
-nombre = 'Anthony'
+nombre = 'Anthony'  # String
 
-edad = 24
+edad = 24           # Number
 
-años_nacido = 24.9
+años_nacido = 24.9  # Float
 
-casado = False
+casado = False      # Boolean
 
+# str es para convertir algo a string, en este caso se convirtio de número a texto.
 numero_convertido_string = 69
-num_string = str(numero_convertido_string) # str es para convertir algo a string, en este caso se convirtio de número a texto.
+num_string = str(numero_convertido_string)
 print(num_string)
 print(type(num_string))
 

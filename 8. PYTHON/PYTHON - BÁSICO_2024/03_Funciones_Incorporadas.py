@@ -1,3 +1,4 @@
+# *** FUNCIONES ***
 equipo_futbol = 'Club de Fútbol América'
 titulos_liga = 14
 

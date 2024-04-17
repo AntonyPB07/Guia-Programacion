@@ -1,14 +1,13 @@
 # *** LISTAS ***
+# LAS LISTAS SON MUTABLES, SE PUEDEN MODIFICAR SUS VALORES
 print('*** LISTAS ***')
 
+# Creación de las listas
 mi_lista = ['Antonio', 'Perez', 24]     # Se inicializa con elementos específicos ya definidos.
-print(type(mi_lista))
-print(mi_lista)
-
 num_lista = [2,1,34,21,65,76,43,23,87]
+otra_lista = list()                     # Se inicializa como una lista vacía, que luego puede ser modificada para agregarle elementos (CONSTRUCTOR).
 
-otra_lista = list()                     # Se inicializa como una lista vacía, que luego puede ser modificada para agregarle elementos.
-
+# Funciones de las listas
 otra_lista.append(10)                   # append agrega elementos a la lista
 otra_lista.append("Hola")
 otra_lista.append(True)
@@ -31,6 +30,7 @@ print(otra_lista)
 print('SUMA DE AMBAS LISTAS SE CONCATENAN:')
 print(mi_lista + otra_lista)
 
+# Acceder a los valores de las listas
 print('*** ACCEDER A LOS VALORES DE LA LISTA ***')
 print(mi_lista[0])      # Accedemos a los valores de acuerdo a su indice
 print(mi_lista[2])

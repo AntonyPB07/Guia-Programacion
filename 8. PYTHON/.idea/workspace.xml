@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a137daf-e3fd-465d-ad6f-555dc3756a8d" name="Changes" comment="" />
+    <list default="true" id="2a137daf-e3fd-465d-ad6f-555dc3756a8d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/PYTHON - BÁSICO_2024/09_Sets.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PYTHON - BÁSICO_2024/10_Diccionarios.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHON - BÁSICO_2024/00_Básico.py" beforeDir="false" afterPath="$PROJECT_DIR$/PYTHON - BÁSICO_2024/00_Básico.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHON - BÁSICO_2024/02_Variables.py" beforeDir="false" afterPath="$PROJECT_DIR$/PYTHON - BÁSICO_2024/02_Variables.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHON - BÁSICO_2024/03_Funciones_Incorporadas.py" beforeDir="false" afterPath="$PROJECT_DIR$/PYTHON - BÁSICO_2024/03_Funciones_Incorporadas.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHON - BÁSICO_2024/07_Listas.py" beforeDir="false" afterPath="$PROJECT_DIR$/PYTHON - BÁSICO_2024/07_Listas.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PYTHON - BÁSICO_2024/08_Tuplas.py" beforeDir="false" afterPath="$PROJECT_DIR$/PYTHON - BÁSICO_2024/08_Tuplas.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,6 +44,12 @@
     "Python.02_Variables.executor": "Run",
     "Python.03_Funciones_Incorporadas.executor": "Run",
     "Python.04_Operadores.executor": "Run",
+    "Python.05_Strings.executor": "Run",
+    "Python.06_FuncionesStrings.executor": "Run",
+    "Python.07_Listas.executor": "Run",
+    "Python.08_Tuplas.executor": "Run",
+    "Python.09_Sets.executor": "Run",
+    "Python.10_Diccionarios.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
@@ -64,7 +79,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>

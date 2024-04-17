@@ -1,3 +1,4 @@
+# *** BÁSICO ***
 # Así se comenta en Python en una sola línea.
 
 """Así se
