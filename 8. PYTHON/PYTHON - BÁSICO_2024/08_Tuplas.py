@@ -13,7 +13,7 @@ print(constructor_tupla)
 print(constructor_tupla[0])
 print(constructor_tupla[-1])
 
-# Funciones de las tuplas (count, index)
+# Funci ones de las tuplas (count, index)
 print(tupla_vacia.count('es'))              # Count cuenta cuantas veces se encuentra 'es' en la tupla, en este caso nos devuelve uno.
 print(constructor_tupla.index('Antony'))    # index nos indica el índice donde se encuentra posicionado el valor que se le indice, en este caso 'Antony'
 
