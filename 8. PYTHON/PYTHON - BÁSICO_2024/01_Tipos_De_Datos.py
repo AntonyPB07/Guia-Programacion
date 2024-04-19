@@ -12,12 +12,22 @@ verdadero_falso = True
 
 # *** TIPOS DE DATOS COMPUESTOS ***
 # Listas (list)
+mi_lista = ['Antonio', 'Perez', 24]
 
 # Tuplas (tuple)
+mi_tupla = ('Antonio', 'es', 'Ingeniero', 'Sistemas')
 
 # Diccionarios (dict)
+mi_diccionario = {
+    'Nombre':'Antonio',
+    'Apellido':'Pérez',
+    'Profesión':'Ingeniero',
+    'Lenguajes':{'Python', 'Javascript', 'Sql'},
+    'Edad':24
+}
 
 # Conjuntos (set)
+set = {'vaca', 'pollo', 'toro', 'gallina', 'caballo'}
 
 # *** RESUMEN ***
 print(type(10))                  # Int
