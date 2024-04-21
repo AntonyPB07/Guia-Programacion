@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño Responsivo</title>
+</head>
+<body>
+<!--? srcset y sizes son atributos de HTML utilizados para permitir que las imágenes se adapten de manera más eficiente a diferentes dispositivos y tamaños de pantalla. 
+<!--?   Estos atributos son útiles para crear sitios web más receptivos y optimizados en términos de rendimiento y calidad de imagen.*/
+
+<!--? srcset: Es un atributo de la etiqueta <img> que especifica las distintas fuentes de imagen disponibles y sus tamaños. Cada fuente de imagen va seguida 
+<!--?   de un descriptor de tamaño que indica cuándo debe utilizarse esa imagen en particular en función del ancho de la ventana gráfica del navegador o la densidad de píxeles del dispositivo.
+
+<!--? sizes: Este atributo especifica el tamaño del elemento <img> en el diseño de la página web, ayudando al navegador a determinar la imagen más adecuada a cargar.-->
+    <img src="imagen-pequena.jpg"
+    srcset="imagen-mediana.jpg 1000w,
+    imagen-grande.jpg 2000w"
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 800px" 
+    alt="Descripción de la imagen">
+
+
+
+<!--? <picture> se utiliza junto con las atributos srcset y sizes para proporcionar una manera más avanzada de manejar imágenes responsivas y adaptativas. Permite especificar 
+<!--?   varias fuentes de imagen y condiciones de visualización para que el navegador elija la imagen más adecuada en función del tamaño y las características del dispositivo.-->
+<picture>
+    <!-- Fuente de imagen para pantallas grandes (más de 1200px de ancho) -->
+    <source srcset="imagen-grande.jpg" media="(min-width: 1200px)">
+        
+    <!-- Fuente de imagen para pantallas medianas (entre 600px y 1200px de ancho) -->
+    <source srcset="imagen-mediana.jpg" media="(min-width: 600px)">
+        
+    <!-- Fuente de imagen por defecto para pantallas pequeñas -->
+    <img src="imagen-pequena.jpg" alt="Descripción de la imagen">
+</picture>      
+
+</body>
+</html>
