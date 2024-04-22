@@ -11,3 +11,4 @@ print(lenguajes_programacion.expandtabs())          # Reemplaza las tabulaciones
 print(lenguajes_programacion.find('ript'))          # Busca la primera aparición de ('ript') dentro de la cadena de texto. Devuelve el índice de la primera ocurrencia o -1 si la subcadena no se encuentra.
 print(lenguajes_programacion.rfind('th'))           # Busca la última aparición de ('th') dentro de la cadena de texto. Devuelve el índice de la última ocurrencia o -1 si la subcadena no se encuentra.
 print(lenguajes_programacion.isalpha())             # Verifica si todos los caracteres en la cadena de texto son caracteres alfabéticos (letras).
+print(sorted(lenguajes_programacion))               # Retorna una nueva lista ordenada a partir de los elementos en iterable.
