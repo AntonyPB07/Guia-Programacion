@@ -1,0 +1,76 @@
+
+@font-face {
+    font-family: Roboto;
+    src: url(font/Roboto-Light.ttf);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #032b45;
+    font-family: Roboto;
+    font-weight: 00;
+}
+
+.header{
+    display: flex;
+    background-color:transparent;
+}
+
+.header__logo-container{
+    margin: 15px;
+    filter: drop-shadow(0 0 3px #fff);
+    max-width: 100%;
+    width: 100px;
+}
+
+.header__logo{
+    width: 100%;
+}
+
+.header__nav{
+    display: none;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vh;
+    margin: auto;
+    position: absolute;
+    background-color: #fff;
+    z-index: -1;
+    top: 0;
+}
+
+.header__nav-list{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    margin: auto;
+}
+
+.header__nav-item{
+    list-style: none;
+}
+
+.header__nav-item a{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.header__input-menu {
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+    filter: drop-shadow(1px 0 3px #fff);
+    background-color: transparent;
+    color: #fff;
+    border: none;
+}
+
+.header__input-menu:checked ~ .header__nav {
+    display: block;
+}
