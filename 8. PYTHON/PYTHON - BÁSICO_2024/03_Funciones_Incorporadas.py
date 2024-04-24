@@ -173,9 +173,14 @@ persona = Persona("Ana", 40)
 tiene_nombre = hasattr(persona, "nombre")
 print(tiene_nombre)
 
-# hash()
+# hash() ---> devuelve el valor hash de un objeto. Un valor hash es un número entero que representa de manera única los datos contenidos en el objeto.
+string = "This is a string"
+hashed_value = hash(string)
+print(hashed_value)
+
 # help()
-# hex()
+# hex() ---> Convierte un número entero a una cadena hexadecimal de minúsculas con el prefijo «0x».
+hex(24)
 
 # id()
 # input()
@@ -183,40 +188,134 @@ print(tiene_nombre)
 # isinstance()
 # issubclass()
 # iter()
+mi_lista = [1, 2, 3, 4, 5]
+lista_iterador = iter(mi_lista)
+while True:
+    try:
+        siguiente_elemento = next(lista_iterador)
+        print(siguiente_elemento)
+    except StopIteration:
+        break
 
 # len()
 # list()
-# locals()
+# locals() ---> devuelve un diccionario que representa el ámbito local actual, es decir, un mapeo de nombres de variables locales a sus valores.
+def example_function():
+  x = 10
+  y = "hello"
+  local_vars = locals()
+  print(local_vars)
+example_function()
 
-# map()
-# max()
+# map() ---> aplica una función a todos los elementos de un objeto iterable (lista, cadena, tupla, etc.) y devuelve un nuevo iterador con los resultados transformados.
+def double(x):
+    return 2 * x
+numbers = [1, 2, 3, 4, 5]
+result = map(double, numbers)
+doubled_numbers = list(result)
+print(doubled_numbers)  # Output: [2, 4, 6, 8, 10]
+
+# max() ---> encouentra el valor máximo entre uno o más elementos. Puede aceptar iterables, como listas, tuplas, cadenas, etc., y también puede tomar argumentos separados.
+numbers = [5, 8, 3, 10, 1]
+max_number = max(numbers)
+print(max_number)
+words = ["apple", "banana", "orange", "kiwi"]
+longest_word = max(words, key=len)
+print(longest_word)
+
 # memoryview()
-# min()
+# min() ---> encontrar el valor mínimo entre uno o más elementos, similar a max() pero encuentra el mínimo en lugar del máximo.
+numbers = [5, 8, 3, 10, 1]
+min_number = min(numbers)
+print(min_number)
+words = ["apple", "banana", "orange", "kiwi"]
+shortest_word = min(words, key=len)
+print(shortest_word)
 
-# next()
+# next() ---> se utiliza para obtener el próximo elemento de un iterador.
+my_iterator = iter([1, 2, 3])
+print(next(my_iterator))
+print(next(my_iterator))
 
 # object()
-# oct()
+# oct() ---> se utiliza para convertir un número entero en su representación octal (base 8) en forma de cadena.
+numero_entero = 20
+representacion_octal = oct(numero_entero)
+print(representacion_octal)
+
 # open()
 # ord()
 
-# pow()
+# pow() ---> se utiliza para calcular una potencia de un número o realizar operaciones modulares.
+resultado = pow(2, 3)
+print(resultado)
+resultado_mod = pow(3, 4, 5)
+print(resultado_mod)
+
 # print()
 # property()
 
-# range()
+# range() --->  genera una secuencia de números enteros. Puede tomar uno, dos o tres argumentos que especifican el inicio, el final (no inclusivo) y el paso de la secuencia.
+secuencia2 = range(1, 11)
+print(list(secuencia2))
+secuencia3 = range(0, 11, 2)
+print(list(secuencia3))
+
 # repr()
-# reversed()
-# round()
+# reversed() ---> obtener un iterador que devuelve los elementos de una secuencia en orden inverso.
+numeros = [1, 2, 3, 4, 5]
+iterador_reverso = reversed(numeros)
+for numero in iterador_reverso:
+    print(numero)
+
+# round() ---> utiliza para redondear un número decimal a una precisión específica (número de dígitos decimales).
+numero = 3.14159
+numero_redondeado = round(numero, 2)
+print(numero_redondeado)
 
 # set()
-# setattr()
-# slice()
-# sorted()
+# setattr() ---> establece el valor de un atributo de un objeto dado. Toma tres argumentos: el objeto, el nombre del atributo y el valor que se desea asignar.
+class Persona:
+  def __init__(self, nombre):
+    self.nombre = nombre
+persona = Persona("Juan")
+setattr(persona, 'edad', 30) # establecemos el nuevo valor del objeto
+print(persona.nombre)
+print(persona.edad)
+
+# slice() ---> crea un objeto de tipo slice, que representa un rango de índices para su uso en indexación de secuencias como listas, tuplas y cadenas.
+numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+mi_slice = slice(2, 7)
+sublista = numeros[mi_slice]
+print(sublista)
+
+# sorted() --->  ordenar una secuencia iterable (como una lista o una tupla) y devolver una nueva lista con los elementos ordenados.
+numeros = [5, 2, 8, 1, 3]
+numeros_ordenados = sorted(numeros)
+print(numeros_ordenados)
+
 # staticmethod()
 # str()
-# sum()
-# super()
+# sum() ---> sumar todos los elementos de una secuencia iterable, como una lista, tupla o conjunto.
+numeros = [1, 2, 3, 4, 5]
+suma_total = sum(numeros)
+print(suma_total)
+
+# super() ---> se utiliza para acceder a métodos y atributos de la superclase (clase padre) de una clase desde una subclase (clase hija).
+class Animal:
+  def __init__(self, nombre):
+    self.nombre = nombre
+  def saludar(self):
+    return f'Hola, soy {self.nombre}'
+class Perro(Animal):
+  def __init__(self, nombre, raza):
+    super().__init__(nombre)
+    self.raza = raza
+  def saludar(self):
+    mensaje_padre = super().saludar()
+    return f'{mensaje_padre}. Soy un {self.raza}'
+mi_perro = Perro('Buddy', 'Labrador')
+print(mi_perro.saludar())
 
 # tuple()
 
