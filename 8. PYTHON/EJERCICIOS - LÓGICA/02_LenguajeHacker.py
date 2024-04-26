@@ -5,9 +5,10 @@ def lenguaje_hacker(texto):
             "1": "L", "2": "R", "3": "E", "4": "A", "5": "S", "6": "b", "7": "T", "8": "B", "9": "g", "0": "o"}
     texto = ''
 
-    for palabra in texto:
-        palabra += texto
-        texto.upper()
+    for letra in texto:
+        if letra.upper() in leet.keys():
+            letra += texto
+            texto.upper()
 
     return texto
 

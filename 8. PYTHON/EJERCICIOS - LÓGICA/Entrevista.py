@@ -53,8 +53,16 @@ else:
     return new_lista
 print(lista_ordenada())'''
 
-class Person:
-  name = "John"
-  age = 36
-  country = "Norway"
-print(dir(Person))
+'''def buscar_palabra(palabra):
+    listas_palabras = ('Antonio', 'Martinez', 'Mendoza', 'Fernandez')
+    palabra_existe = False
+    for list in listas_palabras:
+        if list == palabra:
+            palabra_existe = True
+            break
+    if palabra_existe:
+        print(f'La palabra {palabra} existe en la lista')
+    else:
+        print(f'La palabra {palabra} no existe en la lista')
+buscar_palabra('Fernandez')'''
+

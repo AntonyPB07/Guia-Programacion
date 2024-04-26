@@ -1,0 +1,6 @@
+Esta es una prueba para
+trabajar con archivos txt
+tambien se trabajará con archivos
+csv, json,xml
+Texto insertado al final, cerrando el archivo.Esta es una prueba para
+trabajar con archivos txt

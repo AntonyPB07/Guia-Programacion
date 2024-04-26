@@ -8,4 +8,4 @@ def anagrama(palabra1, palabra2):
     else:
         return False
 
-print(anagrama('andrea', 'endrae'))
+print(anagrama('andrea', 'endraa'))
