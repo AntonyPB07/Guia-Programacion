@@ -41,12 +41,26 @@ def sum_all_nums(*nums):
     for num in nums:
         total += num
     return total
-print(sum_all_nums(2, 3, 5)) # 10
+print(sum_all_nums(2, 3, 5))
 
 # Función con parámetros de otra función
-#You can pass functions around as parameters
 def square_number (n):
     return n * n
 def do_something(f, x):
     return f(x)
 print(do_something(square_number, 3)) # 27
+
+# kwargs ---> se utiliza en la definición de funciones para aceptar un número variable de argumentos de palabras clave (key-word arguments).
+def ejemplo_funcion(**kwargs):
+    for clave, valor in kwargs.items():
+        print(f"Clave: {clave}, Valor: {valor}")
+ejemplo_funcion(a=1, b=2, c=3)
+
+# *** RECURSIVIDAD ***
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n - 1)
+resultado = factorial(5)
+print("Factorial de 5:", resultado)

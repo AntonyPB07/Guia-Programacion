@@ -16,7 +16,7 @@ print('12-',lenguajes_programacion.replace('JAVA', 'Kotlin'))   # crear una nuev
 print('13-',lenguajes_programacion.rfind('th'))         # Busca la última aparición de ('th') dentro de la cadena de texto. Devuelve el índice de la última ocurrencia o -1 si la subcadena no se encuentra.
 print('14-',lenguajes_programacion.rindex('ava'))       # Busca la última ocurrencia de una subcadena en una cadena y devuelve su índice.
 print('15-',textopara_demostracion.rsplit(',',2))   # Divide una cadena en subcadenas utilizando un separador específico, comenzando desde el final de la cadena (de derecha a izquierda).
-print('16-',textopara_demostracion.split())          # Divide una cadena en subcadenas utilizando un separador específico. Este método devuelve una lista de las subcadenas resultantes después de la división.
+print('16-',textopara_demostracion.split())             # Divide una cadena en subcadenas utilizando un separador específico. Este método devuelve una lista de las subcadenas resultantes después de la división.
 print('11-',lenguajes_programacion.startswith('pyt'))   # Verifica que el texto comience con ls caracteres 'pyt' en este caso
 print(textopara_demostracion.strip())                   # eliminar los espacios en blanco (u otros caracteres especificados) al principio y al final de una cadena.
 print(textopara_demostracion.swapcase())                # Intercambia las letras minúsculas por mayúsculas y viceversa en una cadena.

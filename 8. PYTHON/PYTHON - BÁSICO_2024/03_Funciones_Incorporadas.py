@@ -224,6 +224,7 @@ longest_word = max(words, key=len)
 print(longest_word)
 
 # memoryview()
+
 # min() ---> encontrar el valor mínimo entre uno o más elementos, similar a max() pero encuentra el mínimo en lugar del máximo.
 numbers = [5, 8, 3, 10, 1]
 min_number = min(numbers)

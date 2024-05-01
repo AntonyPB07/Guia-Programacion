@@ -26,3 +26,7 @@ set_nuevo = {'Python', 'Sql', 'Javascript', 'HTML', 'CSS'}
 set_union = set_persona.union(set_nuevo)
 print(set_union)
 print(set_persona.difference(set_nuevo))
+
+# *** FROZENSET ***
+mi_frozenset = frozenset([1, 2, 3, 4])
+print(mi_frozenset)

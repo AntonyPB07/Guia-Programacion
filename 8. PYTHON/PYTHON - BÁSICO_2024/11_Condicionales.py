@@ -41,7 +41,11 @@ else:
     print('A is a negative number')
 
 
-# SHORT HAND (ATAJO) ---> código if condición else código
+# *** SHORT HAND ***
+# (if) ---> código-if condición código
+if 3 > 2: print("3 es mayor a 2")
+
+# (if-else) ---> código-if condición else código
 nombre = 'Antonio'
 longitud = len(nombre)
 print(f'{nombre} tiene {longitud} letras') if longitud > 5 else print('No tiene el numero de letras seleccionada')

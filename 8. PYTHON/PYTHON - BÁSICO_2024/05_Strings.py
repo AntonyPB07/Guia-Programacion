@@ -50,3 +50,11 @@ print(lenguaje_slice4)
 print('*** REVERSE ***')
 reversed_lenguaje = lenguaje[::-3]
 print(reversed_lenguaje)
+
+# Revisa si en el texto existe la palabra
+cadena = "Es una oración de prueba"
+if "una" in cadena:
+  print("La palabra existe")
+
+if "un0" not in cadena:
+  print("La palabra no existe")

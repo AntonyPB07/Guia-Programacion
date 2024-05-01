@@ -29,6 +29,9 @@ mi_diccionario = {
 # Conjuntos (set)
 set = {'vaca', 'pollo', 'toro', 'gallina', 'caballo'}
 
+# Frozenset (similar a set, pero este es inmutable)
+mi_frozenset = frozenset([1, 2, 3, 4])
+
 # *** RESUMEN ***
 print(type(10))                  # Int
 print(type(3.14))                # Float

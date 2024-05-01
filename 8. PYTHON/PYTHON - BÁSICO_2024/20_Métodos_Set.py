@@ -46,3 +46,13 @@ print(conjunto_unido)
 # update() ---> Agrega elementos al conjunto. Puede tomar un conjunto, una lista, una tupla u otro iterable como argumento.
 my_set.update([80,90,100])
 print(my_set)
+
+# *** SYMMETRIC DIFFERENCES ***
+set1 = {1, 2, 3, 4}
+set2 = {3, 4, 5, 6}
+
+symmetric_diff = set1.symmetric_difference(set2)
+print("Diferencia Simétrica:", symmetric_diff)  # Output: {1, 2, 5, 6}
+
+symmetric_diff = set1 ^ set2
+print("Diferencia Simétrica:", symmetric_diff)  # Output: {1, 2, 5, 6}
