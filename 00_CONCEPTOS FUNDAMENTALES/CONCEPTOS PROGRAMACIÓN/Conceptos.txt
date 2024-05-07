@@ -1,0 +1,188 @@
+Algoritmo: 
+    Un conjunto finito de instrucciones precisas y ordenadas que resuelven un problema o realizan una tarea específica.
+
+Lenguaje de programación: 
+    Un conjunto de reglas sintácticas y semánticas que permiten a un programador escribir programas informáticos que controlan el comportamiento de una computadora.
+
+Programación imperativa: 
+    Un paradigma de programación que se centra en la descripción de los pasos para alcanzar un resultado deseado. Se basa en el concepto de estado mutable y control 
+    explícito del flujo de ejecución.
+
+Programación declarativa: 
+    Un paradigma de programación que se centra en la descripción del resultado deseado sin necesariamente especificar los pasos para alcanzarlo. Los programas 
+    declarativos se centran en qué hacer en lugar de cómo hacerlo.
+
+Código: 
+    Un conjunto de instrucciones escritas en un lenguaje de programación que define el comportamiento de un programa de computadora.
+
+Código fuente: 
+    El texto legible por humanos de un programa escrito en un lenguaje de programación específico antes de ser traducido a código ejecutable.
+
+Código máquina: 
+    El código binario que representa las instrucciones ejecutables por una unidad de procesamiento de una computadora. Es el nivel más bajo de representación de un 
+    programa y es directamente ejecutable por el hardware.
+
+Código binario: 
+    La representación de datos y programas utilizando un sistema de numeración binario (0 y 1). Es el lenguaje de la computadora y la forma en que se almacenan y 
+    procesan los datos a nivel de hardware.
+
+Lenguajes compilados:
+    Son convertidos directamente a código máquina que el procesador puede ejecutar. Como resultado, suelen ser más rápidos y más eficientes al ejecutarse en comparación 
+    con los lenguajes interpretados. También le dan al desarrollador más control sobre aspectos del hardware, como la gestión de memoria y el uso del CPU. 
+    (C, C++, Erlang, Haskell, Rust, etc.).
+
+Lenguajes interpretados:
+    Estos lenguajes ejecutan línea por línea el programa y a la vez ejecutan cada comando. Aquí, si el autor decide que quiere usar un distinto aceite de oliva, podría 
+    borrar el anterior y agregar el nuevo. Tu amigo traductor puede decirte ese cambio a medida que sucede. (PHP, Ruby, Python y JavaScript, etc.).
+
+Bug:
+    Un error en un programa de computadora que causa un comportamiento no deseado o incorrecto. Los errores pueden ser causados por errores de programación, malentendidos 
+    de los requisitos del cliente, o problemas en el entorno de ejecución.
+
+Refactorización: 
+    El proceso de reestructurar y mejorar el diseño interno de un código sin cambiar su funcionalidad externa. La refactorización se realiza para mejorar la legibilidad, 
+    mantenibilidad y eficiencia del código.
+
+Estructura de datos: 
+    Un conjunto organizado de datos y las operaciones que se pueden realizar en esos datos. Las estructuras de datos permiten el almacenamiento, organización y 
+    manipulación eficiente de datos en programas informáticos.
+
+Frontend: 
+    La parte de un sistema informático que interactúa directamente con los usuarios. En el contexto del desarrollo web, el frontend se refiere a la interfaz de usuario 
+    y la experiencia del usuario que se muestra en un navegador web.
+
+Backend: 
+    La parte de un sistema informático que no es visible para los usuarios finales y que se encarga del procesamiento y almacenamiento de datos, así como de la lógica 
+    de negocio. En el desarrollo web, el backend se refiere al servidor y la base de datos que admiten la lógica de la aplicación y la interacción con el frontend.
+
+Fullstack: 
+    Un desarrollador fullstack es aquel que tiene experiencia tanto en el frontend como en el backend del desarrollo web. Es capaz de trabajar en todas las capas de 
+    una aplicación web, desde el diseño de la interfaz de usuario hasta la implementación de la lógica del servidor y la base de datos.
+
+SOLID: 
+    Un acrónimo que representa cinco principios de diseño de software bien establecidos: Single Responsibility, Open/Closed, Liskov Substitution, Interface 
+    Segregation y Dependency Inversion. Estos principios se utilizan para crear sistemas de software que sean fáciles de entender, mantener y extender.
+
+IDE (Integrated Development Environment): 
+    Un entorno de desarrollo integrado que proporciona herramientas y funciones para escribir, depurar y compilar código. Los IDEs suelen incluir editores de código, 
+    depuradores, compiladores y otras herramientas útiles para el desarrollo de software.
+
+HTML (Hypertext Markup Language): 
+    El lenguaje de marcado estándar utilizado para crear páginas web y aplicaciones web. HTML se utiliza para estructurar el contenido de una página web 
+    utilizando elementos y etiquetas.
+
+CSS (Cascading Style Sheets): 
+    Un lenguaje de estilo utilizado para definir la presentación y el diseño de páginas web y aplicaciones web escritas en HTML. CSS se utiliza para aplicar estilos 
+    como colores, fuentes, márgenes y diseños a los elementos HTML.
+
+JavaScript: 
+    Un lenguaje de programación de alto nivel que se utiliza para crear interactividad en páginas web y aplicaciones web. JavaScript se ejecuta en el navegador web 
+    del cliente y se utiliza para manipular el contenido HTML, responder a eventos del usuario y comunicarse con servidores remotos.
+
+DOM (Document Object Model): 
+    Una interfaz de programación que representa la estructura de un documento HTML como un árbol de objetos. El DOM permite a los desarrolladores acceder y manipular 
+    los elementos y contenido de una página web utilizando JavaScript.
+
+TypeScript: 
+    Un superconjunto tipado de JavaScript que añade tipos estáticos opcionales y otras características de programación orientada a objetos a JavaScript. TypeScript 
+    se compila a JavaScript estándar y es ampliamente utilizado para el desarrollo de aplicaciones web y de backend.
+
+JSON (JavaScript Object Notation): 
+    Un formato ligero de intercambio de datos que se utiliza para transmitir datos estructurados entre un servidor y un cliente. JSON es fácil de leer y escribir para 
+    los humanos y fácil de analizar y generar para las máquinas.
+
+Java: 
+    Un lenguaje de programación de alto nivel y orientado a objetos desarrollado por Sun Microsystems (ahora parte de Oracle). Java se utiliza ampliamente para el 
+    desarrollo de aplicaciones empresariales, aplicaciones móviles Android, aplicaciones de escritorio y aplicaciones web.
+
+Python: 
+    Un lenguaje de programación de alto nivel, interpretado y multiparadigma que se utiliza para una amplia variedad de aplicaciones, desde desarrollo web y 
+    científico hasta scripting y automatización de tareas.
+
+Librerías: 
+    Conjuntos de código predefinido y funcionalidades que pueden ser utilizadas por los desarrolladores para llevar a cabo tareas específicas en sus programas. 
+    Las librerías pueden incluir funciones, clases, métodos y otros componentes útiles.
+
+Frameworks: 
+    Conjuntos estructurados de herramientas, bibliotecas y componentes que proporcionan una base para el desarrollo de aplicaciones. Los frameworks simplifican 
+    y estandarizan el proceso de desarrollo al proporcionar una arquitectura y un conjunto de patrones predefinidos.
+
+Módulos: 
+    Unidades de organización de código que permiten a los desarrolladores dividir su código en partes más pequeñas y reutilizables. Los módulos pueden contener 
+    funciones, clases, variables y otros componentes.
+
+Tipado: 
+    La asignación de un tipo de datos a una variable, parámetro, función, etc., en un lenguaje de programación. Los sistemas de tipado pueden ser estáticos 
+    (como en TypeScript) o dinámicos (como en JavaScript).
+
+Paradigma de programación: 
+    Un enfoque o estilo de programación que define cómo se estructura y organiza el código. Algunos ejemplos de paradigmas de programación incluyen la programación 
+    imperativa, la programación declarativa, la programación orientada a objetos, etc.
+
+POO (Programación Orientada a Objetos): 
+    Un paradigma de programación que se basa en el concepto de "objetos", que pueden contener datos y métodos que operan en esos datos. La POO se centra en la 
+    reutilización de código, la encapsulación y el diseño modular.
+
+Recursividad: 
+    Un proceso mediante el cual una función se llama a sí misma directa o indirectamente para resolver un problema. La recursividad es comúnmente utilizada en 
+    algoritmos que pueden ser expresados de manera más clara y concisa mediante llamadas recursivas.
+
+Clases: 
+    Plantillas para la creación de objetos en programación orientada a objetos. Las clases definen propiedades y métodos que describen el comportamiento y las 
+    características de los objetos que se crearán a partir de ellas.
+
+Instancias: 
+    Objetos individuales creados a partir de una clase en programación orientada a objetos. Cada instancia tiene su propio conjunto de valores de propiedad y 
+    puede llamar a los métodos definidos en su clase.
+
+Objetos: 
+    Instancias concretas de clases que contienen datos y métodos que operan en esos datos.
+
+Herencia: 
+    Un concepto de la programación orientada a objetos que permite que una clase herede propiedades y métodos de otra clase. La herencia facilita la reutilización de 
+    código y la creación de jerarquías de clases.
+
+Polimorfismo: 
+    Un principio de la programación orientada a objetos que permite que objetos de diferentes clases sean tratados de manera uniforme. El polimorfismo permite la 
+    flexibilidad y extensibilidad del código.
+
+Métodos:
+    Funciones asociadas a objetos en programación orientada a objetos. Los métodos pueden acceder y manipular los datos de un objeto y pueden ser llamados por el 
+    objeto en sí mismo o por otros objetos.
+
+Función: 
+    Un bloque de código que realiza una tarea específica. Las funciones pueden aceptar datos de entrada (argumentos), procesarlos y devolver un resultado.
+
+AJAX (Asynchronous JavaScript and XML): 
+    Una técnica de desarrollo web que permite a las aplicaciones web enviar y recibir datos del servidor de forma asíncrona sin tener que recargar la página completa. 
+    AJAX se utiliza comúnmente para crear aplicaciones web interactivas y dinámicas.
+
+UI Design (User Interface Design): 
+    El proceso de diseñar la interfaz de usuario de una aplicación o sitio web para que sea atractiva, intuitiva y fácil de usar para los usuarios finales.
+
+UX Design (User Experience Design): 
+    El proceso de mejorar la experiencia del usuario al interactuar con una aplicación o sitio web. El UX design se centra en cómo se sienten y perciben los usuarios 
+    al utilizar una aplicación.
+
+NPM (Node Package Manager): 
+    El gestor de paquetes por defecto para Node.js, que permite a los desarrolladores instalar, compartir y gestionar dependencias de proyectos Node.js.
+
+API (Application Programming Interface): 
+    Un conjunto de reglas y definiciones que permite a diferentes componentes de software comunicarse entre sí. Las API pueden ser utilizadas para acceder a servicios 
+    web, bases de datos, bibliotecas de software, y más.
+
+REST (Representational State Transfer): 
+    Un estilo arquitectónico para el diseño de sistemas de software distribuidos que se basa en estándares web existentes, como HTTP. REST se utiliza comúnmente para 
+    crear APIs web que son escalables, flexibles y fáciles de entender.
+
+RESTful: 
+    Una descripción de una API web que cumple con los principios de diseño de REST, como la separación de cliente y servidor, el uso de métodos HTTP estándar, la 
+    identificación de recursos mediante URIs y la manipulación de recursos a través de representaciones.
+
+CRUD (Create, Read, Update, Delete): 
+    Un conjunto de operaciones básicas que pueden ser realizadas en una base de datos o en otros sistemas de almacenamiento de datos. CRUD se utiliza comúnmente como 
+    una abreviatura para describir las operaciones de creación, lectura, actualización y eliminación de datos.
+
+SEO (Search Engine Optimization):
+    El proceso de mejorar la visibilidad de un sitio web en los resultados de los motores de búsqueda. SEO implica la optimización del contenido del sitio, la 
+    estructura del sitio, los enlaces entrantes y otros factores para aumentar la clasificación de un sitio en los motores de búsqueda.

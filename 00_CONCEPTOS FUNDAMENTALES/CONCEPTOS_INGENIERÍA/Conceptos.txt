@@ -1,0 +1,172 @@
+PROTOCOLOS DE RED
+    Protocolo de Internet (IP): Es el protocolo fundamental que permite la comunicación en Internet. Define cómo los datos se envían y reciben entre dispositivos 
+        en una red, utilizando direcciones IP para identificarlos.
+    
+    Protocolo de control de transmisión (TCP): Proporciona una comunicación fiable y orientada a la conexión entre dispositivos en una red. Se encarga de dividir 
+        los datos en paquetes, enviarlos y asegurar que lleguen correctamente y en orden.
+    
+    Protocolo de datagramas de usuario (UDP): Proporciona una comunicación no fiable y sin conexión entre dispositivos en una red. A diferencia de TCP, no garantiza 
+        la entrega de paquetes ni el orden en que llegan.
+    
+    Protocolo de resolución de direcciones (ARP): Se utiliza para mapear direcciones IP a direcciones físicas (MAC) en una red local.
+    
+    Protocolo de configuración dinámica de host (DHCP): Permite a los dispositivos obtener automáticamente una dirección IP y otra configuración de red cuando se 
+        conectan a una red.
+    
+    Protocolo de control de acceso a medios (MAC): Define cómo los dispositivos en una red comparten y acceden al medio de transmisión, como Ethernet.
+    
+    Protocolo de control de transmisión de hipertexto (HTTP): Utilizado para la transferencia de datos en la World Wide Web, define cómo se solicitan y entregan 
+        recursos web, como páginas HTML y archivos multimedia.
+    
+    Protocolo de transferencia de hipertexto seguro (HTTPS): Similar a HTTP pero con capas de seguridad adicionales proporcionadas por SSL/TLS para cifrar los datos 
+        transmitidos.
+    
+    Protocolo de transferencia de archivos (FTP): Utilizado para la transferencia de archivos entre dispositivos en una red, define cómo se inician, establecen y 
+        terminan las conexiones de transferencia de archivos.
+
+CÓDIGOS DE ESTADO
+    1xx - Respuestas informativas: Indican que la solicitud fue recibida y se está procesando.
+        100 - Continuar: El servidor ha recibido la solicitud y está esperando a que el cliente envíe el resto de la solicitud.
+        101 - Cambio de protocolo: El servidor está cambiando el protocolo utilizado en la conexión.
+    2xx - Respuestas exitosas: Indican que la solicitud fue recibida, comprendida y aceptada correctamente.
+        200 - OK: La solicitud se completó satisfactoriamente.
+        201 - Creado: La solicitud ha tenido éxito y se ha creado un nuevo recurso.
+        204 - Sin contenido: La solicitud se completó correctamente, pero no hay contenido para devolver.
+    3xx - Redirecciones: Indican que se necesita tomar una acción adicional para completar la solicitud.
+        301 - Movido permanentemente: El recurso solicitado ha sido movido permanentemente a una nueva ubicación.
+        302 - Encontrado: El recurso solicitado se ha movido temporalmente a una nueva ubicación.
+        304 - No modificado: Indica que la versión del recurso en caché es válida y se puede usar.
+    4xx - Errores del cliente: Indican que hubo un error en la solicitud realizada por el cliente.
+        400 - Solicitud incorrecta: La solicitud del cliente no se pudo entender o procesar por el servidor.
+        403 - Prohibido: El servidor rechaza la solicitud del cliente por razones de permisos.
+        404 - No encontrado: El servidor no pudo encontrar el recurso solicitado.
+    5xx - Errores del servidor: Indican que hubo un error en el servidor al intentar procesar la solicitud.
+        500 - Error interno del servidor: Indica un error interno del servidor que impidió que se completara la solicitud.
+        502 - Puerta de enlace incorrecta: El servidor actuó como una puerta de enlace o proxy y recibió una respuesta inválida del servidor ascendente.
+        503 - Servicio no disponible: El servidor no puede manejar la solicitud en este momento debido a una sobrecarga temporal o mantenimiento.
+
+SOLICITUDES HTTP
+    GET: Solicita datos del servidor.
+    POST: Envía datos al servidor para que sean procesados.
+    PUT: Actualiza un recurso en el servidor.
+    DELETE: Elimina un recurso en el servidor.
+    HEAD: Solicita solo los encabezados de respuesta, sin el cuerpo de la respuesta.
+    OPTIONS: Solicita información sobre las opciones de comunicación disponibles para el recurso.
+    TRACE: Solicita al servidor que devuelva lo que ha recibido, útil para depuración y diagnóstico.
+
+CLIENTE/SERVIDOR
+    Cliente:
+        Un cliente es un programa o dispositivo que inicia una solicitud para acceder a recursos o servicios ofrecidos por otro programa o dispositivo, llamado servidor.
+        El cliente envía solicitudes al servidor y espera respuestas a esas solicitudes.
+        Puede ser una aplicación de software, un navegador web, una aplicación móvil, etc.
+        Los clientes pueden estar distribuidos en diferentes ubicaciones geográficas y pueden ser accedidos por múltiples servidores.
+    Servidor:
+        Un servidor es un programa o dispositivo que responde a las solicitudes de los clientes proporcionando los recursos o servicios solicitados.
+        Escucha constantemente en una dirección IP y un puerto específicos, esperando conexiones entrantes de los clientes.
+        Procesa las solicitudes recibidas, realiza el trabajo necesario y envía las respuestas de vuelta al cliente.
+        Puede ser un servidor web, un servidor de correo electrónico, un servidor de base de datos, etc.
+        Los servidores pueden estar diseñados para atender a múltiples clientes simultáneamente.
+
+DOMINIO/HOST
+    Dominio:
+        Un dominio es una parte del sistema de nombres de dominio (DNS) que se utiliza para identificar y ubicar recursos en Internet.
+        Los dominios se utilizan para asignar nombres legibles por humanos a direcciones IP numéricas, facilitando la navegación en la web y el acceso a recursos en la red.
+        Un dominio consta de dos partes principales: el nombre de dominio y el TLD (Top-Level Domain).
+        Ejemplos de nombres de dominio incluyen "google.com", "wikipedia.org", etc.
+    Host:
+        Un host, en el contexto de la web, es una computadora o sistema que proporciona servicios o recursos a través de una red, como la World Wide Web.
+        Un host puede tener uno o más dominios asociados con él.
+        En el contexto de las URL, "host" se refiere al servidor que alberga el recurso solicitado. Ejemplo, en la URL "https://www.ejemplo.com/pagina", "www.ejemplo.com" es el host.
+        En un sentido más amplio, un host puede referirse a cualquier dispositivo conectado a una red que pueda comunicarse con otros dispositivos en esa red.
+
+DNS
+    El Sistema de Nombres de Dominio (DNS, por sus siglas en inglés) es un sistema jerárquico distribuido que se utiliza para traducir nombres de dominio legibles 
+    por humanos, como "google.com", en direcciones IP numéricas, que son las identificaciones únicas de los dispositivos en una red, como "172.217.3.78" para Google.
+    
+    Servidores DNS: Son computadoras que almacenan bases de datos de nombres de dominio y sus correspondientes direcciones IP. Hay diferentes tipos de servidores DNS, 
+        incluidos los servidores raíz, los servidores de nombres de dominio de nivel superior (TLD) y los servidores de nombres de dominio autoritativos.
+    Zonas DNS: Son partes del espacio de nombres de dominio que son gestionadas por una entidad específica, como una organización o un proveedor de servicios de Internet (ISP). 
+        Cada zona DNS tiene su propio conjunto de registros DNS que asocian nombres de dominio con direcciones IP y otros tipos de información.
+    Registros DNS: Son entradas en una base de datos DNS que asocian nombres de dominio con diferentes tipos de información, como direcciones IP, registros MX para correo 
+        electrónico, registros NS para servidores de nombres, etc.
+    Resolución DNS: Es el proceso mediante el cual un cliente DNS busca la dirección IP asociada con un nombre de dominio dado. La resolución DNS puede ocurrir de forma 
+        recursiva, donde el cliente solicita la resolución a otros servidores DNS hasta encontrar la dirección IP correspondiente, o de forma iterativa, donde el cliente 
+        interactúa directamente con varios servidores DNS para resolver el nombre de dominio.
+
+PROTOCOLOS DE SEGURIDAD
+    SSL/TLS (Secure Sockets Layer/Transport Layer Security): SSL y su sucesor TLS son protocolos criptográficos diseñados para proporcionar comunicaciones seguras a 
+        través de una red, como Internet. Estos protocolos cifran los datos transmitidos entre un cliente y un servidor para protegerlos contra la interceptación y 
+        la manipulación por parte de terceros no autorizados. SSL y TLS se utilizan comúnmente para asegurar las comunicaciones en aplicaciones como navegadores web, 
+        correo electrónico, mensajería instantánea, entre otros.
+    IPsec (Internet Protocol Security): IPsec es un conjunto de protocolos que se utilizan para garantizar la seguridad de las comunicaciones IP, incluida la autenticación, 
+        la integridad y la confidencialidad de los datos transmitidos entre dos sistemas. IPsec se puede utilizar para crear conexiones VPN (Virtual Private Network) 
+        seguras, proteger el tráfico de red entre redes corporativas y asegurar la comunicación punto a punto en Internet.
+    SSH (Secure Shell): SSH es un protocolo de red que permite a los usuarios acceder de forma segura a sistemas remotos a través de una conexión cifrada. SSH se utiliza 
+        comúnmente para administrar sistemas remotos de forma segura, transferir archivos de manera segura y crear túneles seguros para proteger otras aplicaciones de la red.
+    
+DDoS/FIREWALL
+    DDoS: Es un tipo de ataque cibernético que tiene como objetivo inundar un sistema, servicio o red con una gran cantidad de tráfico malicioso o solicitudes, lo 
+        que hace que el servicio sea inaccesible para los usuarios legítimos. Estos ataques pueden ser llevados a cabo por una red de computadoras comprometidas 
+        (conocidas como botnets) que son controladas por el atacante.
+    Firewall: Es una medida de seguridad que se utiliza para controlar y filtrar el tráfico de red entre una red privada y una red externa, como Internet. El firewall 
+        puede configurarse para permitir o bloquear ciertos tipos de tráfico, según reglas predefinidas, con el objetivo de proteger la red y los sistemas informáticos 
+        de ataques maliciosos y accesos no autorizados.
+    
+    Propósito:
+        DDoS: El propósito de un ataque DDoS es abrumar un sistema o servicio con tráfico malicioso para que se vuelva inaccesible para los usuarios legítimos.
+        Firewall: El propósito de un firewall es proteger una red y sus sistemas informáticos al controlar y filtrar el tráfico de red, permitiendo solo el tráfico 
+            autorizado y bloqueando el tráfico malicioso.
+    Mecanismo:
+        DDoS: Un ataque DDoS se lleva a cabo inundando el sistema objetivo con una gran cantidad de tráfico o solicitudes, agotando así los recursos del sistema y 
+            haciendo que sea inaccesible.
+        Firewall: Un firewall examina el tráfico de red entrante y saliente y aplica reglas de filtrado para permitir o bloquear el tráfico según sea necesario. 
+            Puede filtrar por dirección IP, puerto, protocolo, etc.
+    Prevención:
+        DDoS: Prevenir completamente un ataque DDoS puede ser difícil, ya que involucra la coordinación de una gran cantidad de dispositivos comprometidos. Sin embargo, 
+            hay medidas de mitigación que pueden ayudar a reducir el impacto de un ataque DDoS.
+        Firewall: Los firewalls ayudan a prevenir los ataques maliciosos controlando el tráfico de red y bloqueando el tráfico no autorizado. Sin embargo, un firewall 
+            por sí solo no puede proteger contra todos los tipos de ataques.
+    
+BIOS (Basic Input/Output System): 
+    Es un conjunto de instrucciones básicas almacenadas en un chip de memoria de solo lectura (ROM) en la placa base de una computadora. El BIOS se encarga de realizar 
+    las funciones básicas de entrada y salida, como la inicialización del hardware, la detección de dispositivos y el arranque del sistema operativo.
+
+BIT: Es la unidad más básica de información en computación y telecomunicaciones. Un bit puede tener un valor de 0 o 1, representando los estados de apagado o encendido 
+    de un interruptor electrónico. Los bits se utilizan para representar y almacenar datos en sistemas digitales.
+
+SO (Sistema Operativo): Es un conjunto de software que gestiona los recursos de hardware y proporciona servicios comunes para los programas de aplicación. El sistema 
+    operativo facilita la interacción entre el hardware y el software, gestionando tareas como la gestión de archivos, la memoria, los dispositivos de entrada/salida 
+    y la seguridad del sistema.
+
+COMPILADOR: Es un programa que traduce código fuente escrito en un lenguaje de programación de alto nivel a un código de máquina ejecutable. El compilador analiza 
+    el código fuente y genera un archivo ejecutable o un código intermedio que luego puede ser ejecutado por la computadora.
+
+BASES DE DATOS: Son sistemas de software diseñados para almacenar, organizar y gestionar grandes volúmenes de datos de forma estructurada. Las bases de datos permiten 
+    realizar operaciones como la inserción, eliminación, actualización y recuperación de datos de manera eficiente.
+    
+    Bases de datos relacionales (RDBMS):
+        Las bases de datos relacionales utilizan un modelo de datos relacional para organizar y estructurar los datos.
+        Los datos se almacenan en tablas que consisten en filas y columnas. Cada tabla tiene una clave primaria única que identifica de forma única cada fila en la tabla.
+        Las relaciones entre las tablas se establecen mediante claves primarias y claves foráneas.
+        Ejemplos de sistemas de gestión de bases de datos relacionales incluyen MySQL, PostgreSQL, Oracle Database y Microsoft SQL Server.
+        Las bases de datos relacionales son ampliamente utilizadas en entornos empresariales y en aplicaciones que requieren transacciones complejas y relaciones entre los datos.
+    
+    Bases de datos no relacionales (NoSQL):
+        Las bases de datos no relacionales utilizan diferentes modelos de datos para almacenar y organizar los datos, como documentos, grafos, columnas o pares clave-valor.
+        Estas bases de datos están diseñadas para ser altamente escalables y flexibles, lo que las hace ideales para aplicaciones con grandes volúmenes de datos y requisitos de rendimiento.
+        No imponen una estructura fija en los datos y pueden manejar tipos de datos no estructurados o semiestructurados.
+        Ejemplos de bases de datos no relacionales incluyen MongoDB (orientado a documentos), Neo4j (orientado a grafos), Cassandra (orientado a columnas) y Redis (orientado a pares clave-valor).
+        Las bases de datos no relacionales son comúnmente utilizadas en aplicaciones web, redes sociales, análisis de big data y aplicaciones en tiempo real.
+
+SISTEMA GESTOR DE BASES DE DATOS (SGBD): Es un software que facilita la creación, gestión y manipulación de bases de datos. Un SGBD proporciona una interfaz para que 
+    los usuarios definan, consulten y modifiquen la estructura y el contenido de una base de datos de manera segura y eficiente. Ejemplos de SGBD incluyen MySQL, 
+    PostgreSQL, Oracle Database y Microsoft SQL Server.
+
+LINUX: Linux es un sistema operativo de código abierto basado en el kernel Linux, que fue creado por Linus Torvalds en 1991. Es conocido por su estabilidad, 
+    seguridad y flexibilidad, y es ampliamente utilizado en una variedad de sistemas, desde servidores hasta dispositivos embebidos y computadoras de escritorio. 
+    Linux está disponible en muchas distribuciones diferentes, como Ubuntu, Fedora, Debian, CentOS, entre otras, que ofrecen diferentes conjuntos de software y herramientas.
+
+KALI LINUX: Kali Linux es una distribución de Linux especializada diseñada para pruebas de penetración, auditorías de seguridad y pruebas forenses. Está basada en 
+    Debian y viene preinstalada con una amplia gama de herramientas de seguridad y hacking, como herramientas de análisis de redes, escáneres de vulnerabilidades, 
+    herramientas de inyección SQL, herramientas de ataque a contraseñas, entre otras. Kali Linux es utilizada por profesionales de seguridad, investigadores y entusiastas 
+    de la seguridad informática para realizar pruebas éticas de seguridad en redes y sistemas.
