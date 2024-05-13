@@ -1,68 +1,21 @@
-'''def calculadora_basica(num1, num2):
-    numero = {
-        1:'Suma',
-        2:'Resta',
-        3:'Multiplicacion',
-        4:'Division'
-    }
-    print(f'Selecciona una opción\n{numero}')
-    operacion = int(input('¿Qué operación deseas realizar?\n'))
-    if operacion == 1:
-        return num1 + num2
-    if operacion == 2:
-        return num1 - num2
-    if operacion == 3:
-        return  num1 * num2
-    if operacion == 4:
-        return  num1/num2
-print(calculadora_basica(10,2))'''
+import secrets
+import string
 
-'''def contador_letras(cadena):
-    for i in cadena:
-        nueva_cadena = len(cadena.replace(" ",""))
-    return print(f'El número de caracteres de {cadena} sin contar los espacios es: ', nueva_cadena)
-print(contador_letras('Luis Antonio Perez'))'''
+def generar_contrasena(longitud):
+    caracteres = string.ascii_letters + string.digits + string.punctuation
+    # Excluir caracteres ambiguos para evitar confusiones
+    caracteres = ''.join(c for c in caracteres if c not in 'lIoO01')
+    contrasena = ''.join(secrets.choice(caracteres) for _ in range(longitud))
+    return contrasena
 
-'''def numero_factorial(num):
-    if num == 0:
-        return 1
-    else:
-        factorial = 1
-        for i in range(1,num + 1):
-            factorial *=i
-        return factorial
-print(numero_factorial(4))'''
-
-'''def es_primo(num):
-  if num <= 1:
-    return False
-  for i in range(2, int(num**0.5) + 1):
-    if num % i == 0:
-      return False
-  return True
-
-numero = int(input("Ingrese un número: "))
-if es_primo(numero):
-  print(numero, "es primo")
-else:
-  print(numero, "no es primo")'''
-
-'''def lista_ordenada():
-    lista = (5,9,13,26,7,89,23,26,54,72)
-    new_lista = sorted(lista)
-    return new_lista
-print(lista_ordenada())'''
-
-'''def buscar_palabra(palabra):
-    listas_palabras = ('Antonio', 'Martinez', 'Mendoza', 'Fernandez')
-    palabra_existe = False
-    for list in listas_palabras:
-        if list == palabra:
-            palabra_existe = True
-            break
-    if palabra_existe:
-        print(f'La palabra {palabra} existe en la lista')
-    else:
-        print(f'La palabra {palabra} no existe en la lista')
-buscar_palabra('Fernandez')'''
-
+def main():
+    try:
+        longitud = int(input("Ingrese la longitud deseada para la contraseña: "))
+        if longitud <= 0:
+            print("La longitud de la contraseña debe ser un número positivo.")
+            return
+        contrasena = generar_contrasena(longitud)
+        print("Contraseña generada:", contrasena)
+    except ValueError:
+        print("Por favor, ingrese un número entero válido para la longitud.")
+main()
