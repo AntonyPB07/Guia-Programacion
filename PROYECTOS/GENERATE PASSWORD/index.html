@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de contraseñas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="generator__password-Background">
+        <div class="generator__password">
+            <div class="generate__password">
+                <h1>Generador de contraseñas</h1>
+                <p>Genera una contraseña segura</p>
+                <input type="text" class="password" readonly id="password_generate">
+            </div>
+            <div class="options__password">
+                <div class="option__range">
+                    <p>Longitud de contraseña: </p>
+                    <input type="range" min="12" max="50" value="16" id="range">
+                </div>
+                <div class="options">
+                    <label for="mayus">Mayúsculas</label><br>
+                    <input type="checkbox" name="options" id="mayus" value="mayus">
+                </div>
+                <div class="options">
+                    <label for="minus">Minúsculas</label><br>
+                    <input type="checkbox" name="options" id="minus" value="minus">
+                </div>
+                <div class="options">
+                    <label for="nums">Números</label><br>
+                    <input type="checkbox" name="options" id="nums" value="nums">
+                </div>
+                <div class="options">
+                    <label for="char">Carateres especiales</label><br>
+                    <input type="checkbox" name="options" id="char" value="char">
+                </div>
+            </div>
+            <button type="button" id="button_password">Generar Contraseña</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
