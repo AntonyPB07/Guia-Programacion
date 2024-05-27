@@ -1,18 +1,18 @@
-const generatePassword = (base, length) => {
+function generatePassword(base, length) {
     let password = "";
     for (let x = 0; x < length; x++) {
         let random = Math.floor(Math.random() * base.length);
         password += base.charAt(random);
     }
     return password;
-};
+}
 
-const generate = () => {
+function generate() {
     let length = parseInt(range.value);
 
     let base = "";
     let baseMinus = "abcdefghijklmnopqrstuvwxyz";
-    let baseMayus = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    let baseMayus = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     const numbers = "0123456789";
     const symbols = ".?,;-_¡!¿*%&$/()[]{}|@><";
 
@@ -24,12 +24,10 @@ const generate = () => {
 
     if (char.checked) base += symbols;
 
-    const passwordGenerateElement = document.getElementById('password_generate');
-    passwordGenerateElement.value = generatePassword(base, length);
-};
+    const pass = document.getElementById('password_generate');
+    pass.value = generatePassword(base, length);
+}
 
-window.addEventListener("DOMContentLoaded", () => {
-    button_password.addEventListener("click", () => {
-        generate();
-    });
+document.getElementById('button_password').addEventListener('click', function(){
+    generate();
 });

@@ -1,12 +1,7 @@
-let display = '';
-
-function appendToDisplay(value) {
-    display += value;
-    updateDisplay();
-}
+let display = document.getElementById('display').value;
 
 function clearDisplay() {
-    display = '';
+    display = ''
     updateDisplay();
 }
 
@@ -20,11 +15,17 @@ function calculate() {
         display = eval(display);
         updateDisplay();
     } catch (error) {
-        display = 'Error';
+        display = 'Error'
         updateDisplay();
     }
+
+}
+
+function appendToDisplay(value) {
+    display += value;
+    updateDisplay();
 }
 
 function updateDisplay() {
-    document.querySelector('.display').value = display;
+    document.getElementById('display').value = display;
 }

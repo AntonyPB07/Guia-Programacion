@@ -1,11 +1,44 @@
-const button = document.getElementById('ejecutar');
+function operaciones(operador) {
+    let numero1 = parseFloat(document.getElementById('numberOne').value);
+    let numero2 = parseFloat(document.getElementById('numberTwo').value);
+    let res;
 
-function suma(n1, n2) {
-    return n1 + n2;
+    switch (operador) {
+        case '+':
+            res = numero1 + numero2;
+            break;
+        case '-':
+            res = numero1 - numero2;
+            break;
+        case '*':
+            res = numero1 * numero2;
+            break;
+        case '/':
+            if (numero2 == 0) {
+                document.getElementById('resultado').innerText = 'Error, no se puede dividir entre 0 (cero)'
+                return;
+            }
+            res = numero1 / numero2;
+            break;
+        default:
+            document.getElementById('resultado').innerText = 'Error en la operación.'
+            return;
+    }
+    document.getElementById('resultado').innerText = res;
 }
 
-window.addEventListener("DOMContentLoaded", () => {
-    ejecutar.addEventListener("click", () => {
-        console.log(suma(5, 18));
-    })
-})
+document.getElementById('suma').addEventListener('click', function(){
+    operaciones('+')
+});
+
+document.getElementById('resta').addEventListener('click', function(){
+    operaciones('-')
+});
+
+document.getElementById('multi').addEventListener('click', function(){
+    operaciones('*')
+});
+
+document.getElementById('division').addEventListener('click', function(){
+    operaciones('/')
+});
