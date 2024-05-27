@@ -12,7 +12,7 @@ if (numero == 0) {
     console.log('el producto tiene un costo');
 }
 
-//! IFELSE
+//! IF-ELSE IF
 if (numero < 10) {
     console.log('Numero menor que 10');
 } else if (numero > 5) {
