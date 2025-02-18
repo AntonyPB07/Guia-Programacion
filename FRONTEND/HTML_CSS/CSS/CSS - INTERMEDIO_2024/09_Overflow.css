@@ -1,0 +1,29 @@
+/*? Visible: Este es el valor predeterminado. El contenido que excede el tamaño del contenedor se mostrará fuera de los límites del contenedor. Puede superponer otros elementos.*/
+.container {
+    overflow: visible;
+}
+
+/*? Hidden: El contenido que excede el tamaño del contenedor se recorta y no se muestra.*/
+.container {
+    overflow: hidden;
+}
+
+/*? Scroll: Se agrega una barra de desplazamiento al contenedor para permitir al usuario desplazarse y ver el contenido oculto.*/
+.container {
+    overflow: scroll;
+}
+
+/*? auto: Similar a scroll, pero la barra de desplazamiento solo se muestra cuando es necesario (cuando el contenido excede el tamaño del contenedor).*/
+.container {
+    overflow: auto;
+}
+
+/*? Controla el comportamiento de desbordamiento vertical (eje Y).*/
+.container {
+    overflow-y: visible; /*puede ser cualquier propiedad antes vista. */
+}
+
+/*? Controla el comportamiento de desbordamiento horizontal (eje X).*/
+.container {
+    overflow-x: hidden; /*puede ser cualquier propiedad antes vista. */
+}

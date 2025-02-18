@@ -1,0 +1,34 @@
+/* SIEMPRE comienza en una nueva línea y ocupa todo el ancho disponible (se extiende hacia la izquierda y hacia la derecha tanto como puede).*/
+div, h1, p, header, form, section, footer {
+    display: block;
+}
+
+/* Un elemento en línea NO comienza en una nueva línea y solo ocupa el ancho necesario.*/
+a, span, image {
+    display: inline;
+}
+
+/*Combinación de los dos anteriores. Se comporta como inline pero no ignora width o height.*/
+div {
+    display: inline-block;
+}
+
+/*Utiliza el modelo de cajas flexibles de CSS. Ideal para estructuras de 1 dimensión.*/
+section {
+    display: flex;
+}
+
+/*Versión en línea (ocupa sólo su contenido) del modelo de cajas flexibles de CSS.*/
+section {
+    display: inline-flex;
+}
+
+/*Utiliza cuadrículas o rejillas con el modelo de cajas Grid CSS.*/
+section {
+    display: grid;
+}
+
+/*Oculta el elemento visualmente, como si no existiera en el HTML.*/
+.p {
+    display: none;
+}

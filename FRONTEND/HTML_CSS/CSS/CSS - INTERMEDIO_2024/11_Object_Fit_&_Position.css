@@ -1,0 +1,40 @@
+/*? La propiedad object-fit especifica cómo el contenido multimedia (como una imagen) debe ajustarse dentro de su contenedor (por ejemplo, un <img>).*/
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cubrir completamente el contenedor manteniendo la relación de aspecto */
+}
+/*
+* object-fit: fill;: Estira el contenido para llenar completamente el contenedor, distorsionando la relación de aspecto original si es necesario.
+
+* object-fit: contain;: Escala el contenido para que quepa dentro del contenedor manteniendo la relación de aspecto original. El contenido puede 
+*   no llenar completamente el contenedor, dejando espacios vacíos si es necesario.
+
+* object-fit: cover;: Escala el contenido para que cubra completamente el contenedor manteniendo la relación de aspecto original. El contenido 
+*   puede recortarse si es necesario para llenar el contenedor.
+
+* object-fit: none;: El contenido se muestra en su tamaño original, sin ajustes de escala ni recorte. Puede desbordar el contenedor si es más 
+*   grande que el contenedor.
+
+* object-fit: scale-down;: Similar a contain, pero elige automáticamente entre none y contain basándose en el tamaño del contenido y del 
+*   contenedor, eligiendo el más pequeño.
+*/
+
+
+/*? La propiedad object-position se utiliza para especificar la posición de un elemento multimedia dentro de su contenedor. Puedes usar esta 
+/*?     propiedad para controlar dónde se muestra el contenido multimedia dentro del contenedor.*/
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center; /* Posicionar la imagen en la parte superior centrada */
+}
+
+/*
+* object-position: center;: Centra el contenido multimedia dentro del contenedor tanto horizontal como verticalmente.
+
+* object-position: top left;, object-position: bottom right;, etc.: Especifica la posición exacta del contenido multimedia dentro del contenedor 
+*   utilizando valores de posición, como top, bottom, left y right.
+*/

@@ -1,0 +1,169 @@
+/*! Propiedades Grid*/
+.grid {
+    display: grid; /*Indica que los hijos directos del contenedor serán dispuestos en una cuadrícula.*/
+    grid-template-columns: 100px 200px 300px; /*3 columnas con tamaños 100,200,300.- Define el ancho y el número de columnas en la cuadrícula.*/
+    grid-template-rows: 150px 250px; /*Altura diferente para cada fila 150,250. -  Define la altura y el número de filas en la cuadrícula.*/
+    gap: 10px; /*Esta propiedad establece el espacio entre las celdas (filas y columnas) en la cuadrícula.*/
+    /*Grid-column, Grid-row: Estas propiedades se utilizan en los elementos hijos de la cuadrícula para especificar en qué columnas y filas deben colocarse.*/
+    grid-column: 1/3; /* Ocupa desde la columna 1 hasta la columna 3 */
+    grid-row: 2; /* Se coloca en la segunda fila */
+    grid-auto-rows: 150px; /*establece la altura predeterminada de las filas en una cuadrícula CSS cuando se añaden filas automáticamente debido al contenido o al uso de grid-auto-flow.*/
+    grid-auto-flow: row; /*row, column, dense - determina cómo se colocan los elementos en la cuadrícula cuando no se especifican explícitamente en las filas (grid-template-rows) o columnas (grid-template-columns).*/
+    grid-auto-columns: 150px; /* establece el ancho predeterminado de las columnas en una cuadrícula CSS cuando se añaden columnas automáticamente debido al contenido o al uso de grid-auto-flow.*/
+}
+
+/*! auto y fr*/
+/*? auto y fr son importantes para definir el tamaño de las columnas y filas dentro de una cuadrícula (grid) utilizando la propiedad grid-template-columns y grid-template-rows.*/
+.grid2 {
+    display: grid;
+    /*AUTO permite que la columna o fila se ajuste automáticamente según el contenido que contiene, tomará el tamaño mínimo para ajustarse al contenido.*/
+    grid-template-columns: auto auto auto; 
+    /*fr permite distribuir el espacio disponible en partes iguales entre las columnas o filas especificadas. El espacio se divide de manera proporcional entre las unidades fr*/
+    grid-template-columns: 1fr 2fr 1fr; /*el espacio disponible se divide en tres partes (1fr, 2fr, 1fr). La segunda columna (2fr) ocupará el doble de espacio que las columnas adyacentes (1fr).*/
+}
+
+/*! repeat y minmax*/
+/*? repeat() y minmax() son útiles para definir patrones repetitivos y limitar el tamaño mínimo y máximo de las columnas y filas dentro de una cuadrícula (grid).*/
+/*? repeat() permite especificar un patrón repetitivo para definir columnas o filas en una cuadrícula. útil cuando quieres repetir el mismo tamaño de columna o fila varias veces.*/
+.grid3 {
+    display:grid;
+    grid-template-columns: repeat(3, 100px); /* Repite 3 veces columnas de 100px */
+    grid-template-rows: repeat(2, 150px); /* Repite 2 veces filas de 150px */
+}
+/*? minmax() establece un rango flexible entre un tamaño mínimo y máximo para las columnas o filas en una cuadrícula. Esto permite que las columnas o filas se ajusten automáticamente 
+/*?     dentro de un rango específico en función del espacio disponible.*/
+.grid4 {
+    display: grid;
+    grid-template-columns: minmax(100px, 1fr) 200px minmax(150px, auto);
+/*
+La primera columna (minmax(100px, 1fr)) tendrá un ancho mínimo de 100px y se expandirá para ocupar todo el espacio restante (1fr).
+La segunda columna (200px) tendrá un ancho fijo de 200px.
+La tercera columna (minmax(150px, auto)) tendrá un ancho mínimo de 150px y se ajustará automáticamente según el contenido (auto).
+*/
+}
+.grid5 {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+}
+
+/*! auto-fit y auto-fill - útiles para crear diseños flexibles y adaptativos.
+/*? Ambas se utilizan junto con repeat() para definir el número de columnas en una cuadrícula (grid) de forma dinámica en función del espacio disponible.*/
+.grid6 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 100px);
+    gap: 10px;
+/*En este ejemplo, se crearán tantas columnas de 100px como quepan dentro del contenedor padre. Si el espacio es suficiente, se llenará con columnas de 100px. Las columnas 
+vacías se mantendrán visibles.*/
+}
+.grid7 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+/*En este ejemplo, las columnas se ajustarán automáticamente para llenar el espacio disponible (1fr), pero utilizando un mínimo de 100px y un máximo de 1fr para cada columna. 
+Las columnas vacías (que no contengan contenido) se colapsarán y no ocuparán espacio.*/
+}
+/*
+auto-fill: Crea tantas columnas como sea posible para llenar el espacio disponible, mostrando todas las columnas vacías.
+auto-fit: Crea tantas columnas como sea posible para llenar el espacio disponible, pero colapsa las columnas vacías que no tienen contenido.
+*/
+
+/*! grid area*/
+/*? Es una forma conveniente y poderosa de definir el diseño de una cuadrícula (grid) utilizando un sistema basado en áreas nombradas. Esta propiedad te permite visualizar 
+/*?     y organizar visualmente el diseño de tu cuadrícula utilizando nombres de áreas que representan secciones específicas de la cuadrícula.*/
+/*
+*Cada fila de la cadena de texto representa una fila en la cuadrícula.
+*Los nombres de áreas se separan por espacios.
+*Los caracteres individuales dentro de cada fila representan las áreas de cada columna en esa fila.
+*/
+.grid8 {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "sidebar main main"
+        "sidebar footer footer";
+    grid-template-rows: auto;
+    grid-template-columns: 200px 1fr 1fr;
+}
+/*
+Se define una cuadrícula (grid) con tres filas y tres columnas.
+La propiedad grid-template-areas define un esquema de diseño en forma de cuadrícula:
+La primera fila tiene tres áreas llamadas "header".
+La segunda fila tiene un área "sidebar" seguida de dos áreas "main".
+La tercera fila tiene un área "sidebar" seguida de dos áreas "footer".
+
+Para aplicar este esquema de diseño a los elementos HTML dentro de la cuadrícula, cada elemento debe tener asignado el nombre de área correspondiente utilizando la propiedad grid-area.
+*/
+.header {
+    grid-area: header;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.main {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+/*! Alineación con Grid*/
+grid9 {
+    justify-items: start;
+/*
+start: Alinea los elementos al inicio del contenedor de la celda.
+end: Alinea los elementos al final del contenedor de la celda.
+center: Alinea los elementos en el centro del contenedor de la celda.
+stretch (valor por defecto): Estira los elementos para que ocupen todo el espacio disponible en el contenedor de la celda.
+*/
+    justify-content: start;
+/*
+start: Alinea las columnas al inicio del contenedor de la cuadrícula.
+end: Alinea las columnas al final del contenedor de la cuadrícula.
+center: Alinea las columnas en el centro del contenedor de la cuadrícula.
+space-between: Distribuye las columnas de manera uniforme con espacios entre ellas, empezando desde el inicio y terminando al final del contenedor.
+space-around: Distribuye las columnas de manera uniforme con espacios alrededor de ellas.
+space-evenly: Distribuye las columnas de manera uniforme con espacios iguales entre ellas y alrededor de ellas.
+*/
+    align-items: start;
+/*
+start: Alinea los elementos al inicio del contenedor de la celda en el eje transversal.
+end: Alinea los elementos al final del contenedor de la celda en el eje transversal.
+center: Alinea los elementos en el centro del contenedor de la celda en el eje transversal.
+stretch (valor por defecto): Estira los elementos para que ocupen todo el espacio disponible en el contenedor de la celda en el eje transversal.
+*/
+    align-content: start;
+/*
+start: Alinea las filas al inicio del contenedor de la cuadrícula.
+end: Alinea las filas al final del contenedor de la cuadrícula.
+center: Alinea las filas en el centro del contenedor de la cuadrícula.
+space-between: Distribuye las filas de manera uniforme con espacios entre ellas, empezando desde el inicio y terminando al final del contenedor.
+space-around: Distribuye las filas de manera uniforme con espacios alrededor de ellas.
+stretch (valor por defecto): Estira las filas para que ocupen todo el espacio disponible en el contenedor de la cuadrícula.
+*/
+}
+
+/*! subgrid*/
+/*? Es una característica avanzada de CSS Grid que permite crear una relación de subcuadrícula entre una cuadrícula contenedora y una cuadrícula secundaria dentro de un 
+/*?     elemento hijo. Esta característica está diseñada para simplificar y mejorar el diseño de cuadrículas anidadas, permitiendo que las propiedades de la cuadrícula 
+/*?     contenedora se apliquen automáticamente a la cuadrícula secundaria.*/
+/*
+* La propiedad subgrid se utiliza en la declaración de grid-template-columns o grid-template-rows dentro de un elemento hijo (display: grid) para indicar que el elemento 
+*   debe usar una relación de subcuadrícula con la cuadrícula de su elemento contenedor (display: grid).
+*/
+.parent-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Define dos columnas en la cuadrícula contenedora */
+    grid-template-rows: auto; /* Define filas automáticas en la cuadrícula contenedora */
+}
+.child-grid {
+    display: grid;
+    grid-template-columns: subgrid; /* Utiliza una relación de subcuadrícula para las columnas */
+    grid-template-rows: subgrid; /* Utiliza una relación de subcuadrícula para las filas */
+}
+/*
+parent-grid define una cuadrícula principal con dos columnas de tamaños proporcionales (1fr y 2fr) y filas automáticas (auto).
+child-grid utiliza subgrid en sus propiedades grid-template-columns y grid-template-rows para indicar que debe heredar las columnas y filas de su cuadrícula contenedora (parent-grid).
+*/

@@ -1,0 +1,64 @@
+selector {
+    transition: propiedad duración tipo-de-transición retardo;
+}
+
+/*
+* Propiedad: Especifica la propiedad CSS que se animará durante la transición (por ejemplo, background-color, width, opacity, etc.).
+* Duración: Especifica la duración de la transición en segundos (por ejemplo, 0.5s, 1s, 2s, etc.).
+* Tipo-de-transición: Especifica el tipo de interpolación utilizada durante la transición (por ejemplo, ease, linear, ease-in-out, cubic-bezier(...), etc.).
+* Retardo (opcional): Especifica un retardo antes de que comience la transición en segundos (por ejemplo, 0s, 0.3s, 1s, etc.).
+*/
+
+/*! Ejemplo 1*/
+.button {
+    background-color: blue;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: green;
+}
+
+/*! Ejemplo 2*/
+.select {
+    background-color: aqua;
+    color: black;
+    transition: background-color 0.5s ease 1s;
+    &:hover {
+        background-color: beige;
+    }
+}
+
+/*! Ejemplo 3*/
+.element {
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+/*! Ejemplo 4
+Esta función permite crear curvas de tiempo más complejas que los tipos de transición predefinidos como ease, linear, ease-in, ease-out, etc. 
+*/
+div {
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+/*
+? Tipos de transición
+    Existen varios tipos de transición que se pueden utilizar con la propiedad transition:
+ease: Transición suave, comienza lento, acelera y luego desacelera al final.
+linear: Transición constante, misma velocidad de principio a fin.
+ease-in: Transición que comienza lento y luego acelera.
+ease-out: Transición que comienza rápido y luego desacelera.
+ease-in-out: Transición que comienza lento, acelera, y luego desacelera.
+cubic-bezier(x1, y1, x2, y2): Permite definir una curva de tiempo personalizada para la transición.
+
+? Propiedades animables
+    Las propiedades CSS que son animables mediante transiciones incluyen (pero no se limitan a):
+Dimensiones (width, height)
+Posiciones (top, left, right, bottom)
+Color (color, background-color)
+Opacidad (opacity)
+Transformaciones (transform)
+Box model (margin, padding, border-width)
+*/

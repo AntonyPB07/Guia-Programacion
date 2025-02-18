@@ -1,0 +1,73 @@
+/*Posición predeterminada de un elemento en el flujo normal del documento. */
+.box {
+    position: static;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+/*Posiciona un elemento en relación con su posición original en el flujo normal del documento. Si se especifican propiedades de desplazamiento
+(top, right, bottom, left), el elemento se moverá desde su posición original, pero dejará un espacio vacío en su ubicación original.*/
+.box {
+    position: relative;
+    top: 20px;
+    left: 30px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+/*Posiciona un elemento en relación con su primer elemento padre posicionado (es decir, un elemento cuya posición no es static). Si no hay 
+ningún padre posicionado, el elemento se posicionará en relación con el elemento <html>.*/
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: lightblue;
+    padding: 20px;
+}
+
+/*Posiciona un elemento de manera fija con respecto a la ventana del navegador, lo que significa que permanece en la misma posición incluso 
+cuando se desplaza la página. Un elemento fixed se ignora en el flujo normal del documento y no afecta la posición de otros elementos.*/
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+/*Es una combinación entre relative y fixed. Un elemento con posición sticky se comporta como relative hasta que alcanza un umbral específico, 
+momento en el que se comporta como fixed y se mantiene fijo en esa posición.*/
+.header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding: 10px;
+    z-index: 1000;
+}
+
+/*Define la posición del elemento a lo largo del eje Z (profundidad) del modelo de caja tridimensional CSS. Los valores más altos de z-index
+indican que un elemento debe estar más adelante en el plano z (más cerca del usuario), mientras que los valores más bajos están más atrás.
+Elementos cuya propiedad position no sea static (por ejemplo, relative, absolute, fixed, sticky).*/
+.elemento1 {
+    .element1 {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        width: 200px;
+        height: 100px;
+        background-color: red;
+        z-index: 2;
+    }
+    .elemento2 {
+        position: absolute;
+        top: 100px;
+        left: 100px;
+        width: 200px;
+        height: 100px;
+        background-color: blue;
+        z-index: 1;
+    }
+}

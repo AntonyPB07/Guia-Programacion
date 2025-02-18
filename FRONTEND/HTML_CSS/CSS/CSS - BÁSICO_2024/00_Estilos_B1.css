@@ -1,0 +1,189 @@
+/*!tipografiaExterna*/
+@font-face {
+    font-family: Antony;
+    src: url(/font/Honk-Regular.ttf) format("truetype");
+}
+
+/* asi se definen las tipografias externas*/
+
+* {
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* el tamaño total de un elemento se calcula incluyendo el borde y el relleno (padding) dentro del ancho y alto especificados.*/
+}
+
+p {
+    color: black;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+
+#margenes {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin: 20px 12px 2px 11px;
+    /*! SHORTHAND*/
+    margin: auto;
+    /*lo centra*/
+    margin: inherit;
+    /*hereda el valor del elemento padre (tienen que ser el mismo elemento, en este caso es margin)*/
+}
+
+p.bordes {
+    border: 1px solid black;
+    /*! SHORTHAND*/
+    /*!   width, border, color*/
+    border-top: blue;
+    border-right: 15px;
+    border-bottom: 2px solid red;
+    border-radius: 10px;
+    border-bottom-right-radius: 5px;
+}
+
+.colores {
+    color: rgb(255, 99, 71);
+    /*rgb = red, green, blue*/
+    color: #ff6347;
+    /*hexadecimal = rr,gg,bb*/
+    color: hsl(9, 100%, 64%);
+    /*hsl = hue, saturation, lightness*/
+    color: rgba(255, 99, 71, 0.5);
+    /*rgba = red, green, blue, alpha*/
+    /*? ALPHA significa TRANSPARENCIA*/
+    color: hsla(9, 100%, 64%, 0.5);
+    /*hsla = (hue, saturation, lightness, alpha)*/
+    /*? ALPHA significa TRANSPARENCIA*/
+}
+
+#imagen {
+    background-color: #ff6347;
+    opacity: 50%;
+    opacity: 0.5;
+    background-image: url('direccion_img.jpg');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    /*imagen se fija*/
+    background-attachment: scroll;
+    /*imagen se scrollea*/
+    background: #ffffff url("img_tree.png") no-repeat right top;
+    /*! SHORTHAND*/
+}
+
+.imagen [src$='png'] {
+    color: #fff;
+}
+
+#sombras {
+    box-shadow: 0 2px 10px 1px red;
+    /** Se aplica a los contenedores, imagenes NO png, etc...*/
+    /*desplazamiento en el eje x (0), desplazamiento en el eje y (2px), desenfoque (10px), tamaño de la sombra (1px), y color (red).*/
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    /** Se aplica a los textos*/
+    filter: drop-shadow(0 2px 10px rgb(51, 49, 49));
+    /** Se aplica a imagenes PNG, para darles un sombreado unico*/
+}
+
+.padding {
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    padding: 25px 50px 75px 100px;
+}
+
+.height .width {
+    height: 80px;
+    width: 70px;
+    min-height: 15px;
+    min-width: 20px;
+    max-width: 100px;
+    max-height: 150px;
+}
+
+.boxModel {
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+}
+
+#outline {
+    outline-style: ridge;
+    outline-color: #ff6347;
+    outline-width: thick;
+    /*thin (typically 1px)
+    medium (typically 3px)
+    thick (typically 5px)
+    A specific size (in px, pt, cm, em, etc)*/
+    outline: thick ridge pink;
+    /*       width style color*/
+    outline-offset: 5px;
+    /*especificar la distancia entre el borde (outline) de un elemento y su borde exterior (border edge). */
+}
+
+#texto {
+    text-align: center;
+    text-align-last: center;
+    direction: ltr;
+    vertical-align: bottom;
+    text-decoration: dashed;
+    text-decoration-line: overline;
+    text-decoration-color: #ff6347;
+    text-transform: lowercase;
+    text-transform: uppercase;
+    text-shadow: 2px 2px;
+    text-shadow: 2px 2px red;
+}
+
+.textoEspacio {
+    text-indent: 50px;
+    letter-spacing: 5px;
+    line-height: 1.8;
+    word-spacing: 10px;
+    white-space: nowrap;
+}
+
+#unidades {
+    /**unidades relativas*/
+    /*! Es mejor trabajar con unidades relativas ya que mejora la experiencia al hacer responsiva la pagina.*/
+    font-size: 2em;
+    /*Esta unidad es relativa al tamaño de fuente del elemento padre.*/
+    font-size: 3rem;
+    /*Esta unidad es relativa al tamaño de fuente del elemento raíz (<html>)*/
+    font-size: 10%;
+    /*Esta unidad es relativa al tamaño del elemento contenedor.*/
+    /**unidades absolutas*/
+    font-size: 1px;
+    /*Esta es una unidad de medida absoluta que representa un número fijo de píxeles en pantalla.*/
+    font-size: 15pt;
+    /*Una unidad de medida absoluta utilizada principalmente en impresión.*/
+    font-size: 16cm;
+    /*Otra unidad de medida absoluta que representa una longitud física en centímetros.*/
+    font-size: 1in;
+    /*Otra unidad de medida absoluta que representa una longitud física en pulgadas.*/
+    font-size: 22mm;
+    /*Otra unidad de medida absoluta que representa una longitud física en milimetros.*/
+    /**unidades responsivas*/
+    /*! Son unidades de medida relativas en CSS que se utilizan específicamente para dimensiones basadas en el tamaño de la ventana del navegador (viewport).*/
+    height: 100vh;
+    /* La altura de esta sección será igual al 100% del alto del viewport */
+    width: 50vw;
+    /* El ancho de esta caja será igual al 50% del ancho del viewport */
+}
+
+.button {
+    /*Esta es la nueva manera de poner un Hover sin necesidad de hacerlo de manera separada*/
+    color: blue;
+    &:hover {
+        color: red;
+    }
+    &:active {
+        border: #ff6347;
+    }
+}
