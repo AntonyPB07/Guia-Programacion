@@ -28,5 +28,5 @@ CALL p_age_users(30);
 DROP PROCEDURE p_age_users;
 
 
---? PRODECIMIENTOS ALMACENADOS: son un conjunto de instrucciones SQL que se han guardado en el servidor de la base de datos bajo un nombre específico y 
---? que pueden ser invocados y ejecutados en cualquier momento.
+--? PRODECIMIENTOS ALMACENADOS: son un conjunto de instrucciones SQL que se han guardado en el servidor de la base de datos 
+--? bajo un nombre específico y que pueden ser invocados y ejecutados en cualquier momento. 
