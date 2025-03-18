@@ -1,0 +1,24 @@
+{
+    "desarrollador": [
+        {
+            "nombre": "Antonio",
+            "edad": 25,
+            "especialidad": "Frontend"
+        },
+        {
+            "nombre": "Ernesto",
+            "edad": 24,
+            "especialidad": "Frontend"
+        },
+        {
+            "nombre": "Javier",
+            "edad": 23,
+            "especialidad": "Soporte"
+        },
+        {
+            "nombre": "Daniel",
+            "edad": 23,
+            "especialidad": "Ciberserguridad"
+        }
+    ]
+}
