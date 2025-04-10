@@ -3,22 +3,50 @@
         {
             "nombre": "Antonio",
             "edad": 25,
-            "especialidad": "Frontend"
+            "especialidad": "Frontend",
+            "direccion": [
+                {
+                    "calle": "Amapola",
+                    "numero": 17
+                }
+            ],
+            "email": "l.perez@ibs.com"
         },
         {
             "nombre": "Ernesto",
             "edad": 24,
-            "especialidad": "Frontend"
+            "especialidad": "Frontend",
+            "direccion": [
+                {
+                    "calle": "Aurora",
+                    "numero": 21
+                }
+            ],
+            "email": "e.martinez@ibs.com"
         },
         {
             "nombre": "Javier",
             "edad": 23,
-            "especialidad": "Soporte"
+            "especialidad": "Soporte",
+            "direccion": [
+                {
+                    "calle": "Orquídea",
+                    "numero": 31
+                }
+            ],
+            "email": "j.cids@ibs.com"
         },
         {
             "nombre": "Daniel",
             "edad": 23,
-            "especialidad": "Ciberserguridad"
+            "especialidad": "Ciberserguridad",
+            "direccion": [
+                {
+                    "calle": "Azucena",
+                    "numero": 69
+                }
+            ],
+            "email": "d.frias@ibs.com"
         }
     ]
 }
