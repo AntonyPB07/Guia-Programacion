@@ -61,3 +61,10 @@ print(type(my_int))
 # ZeroDivisionError
 # print(4/0) # Descomentar para Error
 print(4/2)
+
+#! RAISE
+#? La instrucción raise genera la excepción especificada denominada exc como si fuese generada de manera natural: raise exc
+# raise es una palabra clave reservada
+
+#! ASSERT
+#? La instrucción assert evalúa una expresión y genera una excepción AssertionError si la expresión es falsa: assert expression[, message]
