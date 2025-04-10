@@ -1,4 +1,5 @@
 # *** MÓDULOS ***
+from math import *                          # Importa todo lo que contiene el módulo, importa todo lo que contiene la librería.
 import mi_modulo                            # Así se importa un módulo con todo lo que contiene.
 from mi_modulo import datos_personales      # Así se importa algo en específico de los módulos, en este caso, se importa unicamene la función datos_personales.
 import random                               # Así se importan módulos propios del lenguaje.
@@ -12,11 +13,11 @@ print(datos0)
 print(datos1)
 
 # Haciendo uso de importaciones del propio lenguaje
-numero = random.randint(1,100)
+numero = random.randint(1,50)
 if numero > 25:
     print(f'El valor de {numero} es mayor a 25')
 else:
-    print('El valor es menor a 25')
+    print(f'El valor {numero} es menor a 25')
 
 # Haciendo uso de importaciones del propio lenguaje usando un Alias
 def area_circulo(Valor_pi, radio):

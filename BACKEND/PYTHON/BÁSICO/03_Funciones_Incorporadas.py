@@ -95,7 +95,7 @@ print(persona1.nombre)
 # dict() ---> Crea un diccionario que contenga información.
 x = dict(name = "John", age = 36, country = "Norway")
 
-# dir() ---> Muestra el contenido de un objeto
+# dir() ---> Lista los nombres de los atributos y métodos (propiedades y funciones) de un objeto
 class Personita:
   name = "John"
   age = 36
