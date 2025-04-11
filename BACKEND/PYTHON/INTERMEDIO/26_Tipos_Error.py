@@ -12,6 +12,16 @@ FileNotFoundError: Archivo no encontrado.
 ImportError: Error al importar un módulo
 ModuleNotFoundError: No puede encontrar el módulo que estás intentando importar en tu código
 AtributeError: Intentar acceder a un atributo que no está definido en un objeto.
+ArithmeticError: Error aritmético general.
+AssertionError: cuando su argumento se evalúa a False (falso), None (ninguno), 0, o una cadena vacía.
+BaseException: Clase base para todas las excepciones.
+IndexError: Error de índice fuera de rango.
+keyboardInterrupt: Interrupción del teclado (Ctrl+C).
+LookupError: Error de búsqueda en un diccionario, lista, tupla, etc.
+MemoryError: Error de memoria insuficiente.
+OverflowError: Error de desbordamiento de entero.
+ImportError: Error al importar un módulo.
+KeyError: Error de clave no encontrada en un diccionario.
 '''
 
 # SyntaxError
