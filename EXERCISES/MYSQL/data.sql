@@ -1,0 +1,1 @@
+-- Scripts de inserción de datos iniciales para la base de datos
