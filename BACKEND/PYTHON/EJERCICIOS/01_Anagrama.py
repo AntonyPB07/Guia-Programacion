@@ -4,7 +4,7 @@ def anagrama(palabra1, palabra2):
     cadena1 = sorted(palabra1)
     cadena2 = sorted(palabra2)
     if cadena1 == cadena2:
-       return True
+        return True
     else:
         return False
 
