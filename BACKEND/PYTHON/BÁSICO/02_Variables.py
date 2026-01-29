@@ -1,5 +1,5 @@
 # *** VARIABLES ***
-# En Python no suele usarse Camel Case (miVariable, numeroPrimo), si no se usa Snake Case (mi_variable, numero_primo).
+# En Python no suele usarse Camel Case (miVariable, numeroPrimo), se usa Snake Case (mi_variable, numero_primo).
 
 nombre = 'Anthony'  # String
 

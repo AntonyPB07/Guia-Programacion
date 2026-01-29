@@ -5,6 +5,8 @@
 comenta en
 varias líneas"""
 
+Otra manera de comentar en varias lineas es seleccionar las líneas a comentar y presionar Ctrl + K seguido de Ctrl + C.
+
 '''
 \'	Single Quote	
 \\	Backslash	
