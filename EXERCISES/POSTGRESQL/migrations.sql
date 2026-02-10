@@ -1,1 +1,0 @@
--- Scripts de cambios de estructura de la base de datos

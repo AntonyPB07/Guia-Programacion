@@ -1,1 +1,0 @@
--- Funciones o procedimientos para la base de datos

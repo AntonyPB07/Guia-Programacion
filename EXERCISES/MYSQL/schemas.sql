@@ -1,1 +1,0 @@
--- Creación de tablas, vistas, procedimientos

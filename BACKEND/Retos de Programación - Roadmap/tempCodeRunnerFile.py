@@ -1,2 +1,0 @@
-")
-    respuesta = input().lower()
